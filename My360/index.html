@@ -1,0 +1,3224 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" href="css/reset.css" />
+		<link rel="stylesheet" href="css/mainTop.css" />
+		<link rel="stylesheet" href="css/mainWeb.css" />
+		<script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+		<title></title>
+		<script>
+			// var a = $(window).height();
+			// console.log(a);
+			// var b = $('.topNav').offset().top;
+			// console.log(b);
+		</script>
+
+	</head>
+	<body>
+		<!--顶部导航-->
+		<div class="topNav">
+			<div class="wrap">
+				<div><a href="http://hao.360.cn/sub/sethomepage.html">设360导航为主页</a></div>
+				<div>
+					<ul class="top_right_ul">
+						<li><a href="http://www.12377.cn/">互联网举报中心</a></li>
+						<li><a href="http://feedback.hao.360.cn/">反馈意见</a></li>
+						<li><a href="#">换肤</a></li>
+					</ul>
+				</div>
+			</div>
+		</div><!--顶部导航-->
+
+		<div class="clearfix"></div>
+
+		<!--居中 定位-->
+		<div class="wrapMain">
+
+			<!--logo栏logo_col-->
+			<div class="logo_col">
+				<div class="logo floatleft">
+					<a href="" class="logo_a"><img src="images/default_logo.png" alt="" /></a>
+				</div>
+				<div class="weather floatleft">
+					<ul>
+						<li id="city">
+							<h3>深圳</h3>
+							<a href="">[切换]</a>
+						</li>
+						<li>
+							<a id="weather_today"></a>
+						</li>
+						<li id="weather_f">
+							<a id="weather_tomorrow"></a>
+							<a href="" class="itomorow">
+								<span class="image_right"></span>
+							</a>
+						</li>
+					</ul>
+				</div>
+				<div class="dateTime floatleft">
+					<a id="datetime"></a>
+				</div>
+				<div class="Email floatleft">
+					<div class="kuaixun">
+						<h3>
+							<a href="">头条:乔任梁去世陈乔恩崩溃</a>
+						</h3>
+					</div>
+					<div class="mail">
+						<span class="mail_image  floatleft"></span>
+						<input type="text" class="mail_single floatleft someenalbed" id="mail_single" placeholder="邮箱账号" style="display:block"/>
+						<div class="mail_logoin" id="mail_form" style="display:none">
+							<form>
+								<p><input type="text" id="youxiang1" placeholder="邮箱账号"/></p>
+								<p>
+									<select id="mail-opts" class="mail-type">
+											<option value="">请选择邮箱</option>
+											<option value="@163.com 网易">@163.com 网易</option>
+											<option value="@126.com 网易">@126.com 网易</option>
+											<option value="@sina.com 新浪">@sina.com 新浪</option>
+											<option value="@sohu.com 搜狐">@sohu.com 搜狐</option>
+											<option value="@yeah.net 网易">@yeah.net 网易</option>
+											<option value="@21cn.com">@21cn.com</option>
+											<option value="@139.com">@139.com</option>
+											<option value="@189.cn">@189.cn</option>
+											<option value="以下在弹出页登录" style="font-weight:600;">以下在弹出页登录</option>
+											<option value="@qq.com">@qq.com</option>
+											<option value="@gmail.com">@gmail.com</option>
+											<option value="@hotmail.com">@hotmail.com</option>
+											<option value="@tom.com">@tom.com</option>
+											<option value="阿里云邮箱" style="color:red;">阿里云邮箱</option>
+											<option value="淘宝账号">淘宝账号</option>
+											<option value="支付宝">支付宝</option>
+											<option value="新浪微博">新浪微博</option>
+											<option value="安全加密邮" style="color:red">安全加密邮</option>
+											<option value="开心网">开心网</option>
+											<option value="人人网">人人网</option>
+											<option value ="百度">百度</option>
+											<option value="51.com">51.com</option>
+											<option value="chinaren校友录">chinaren校友录</option>
+											<option value="天涯社区">天涯社区</option>
+										</select>
+								</p>
+								<p>
+									<input type="text" id="youxiang2" placeholder="******"/><button type="button" id="submit_logoin">登录</button>
+								</p>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div><!--logo栏logo_col-->
+
+			<!--search栏-->
+			<div class="searchItems" id="searchItemss">
+				<div class="search_logo">
+					<a href="" id="search_logo_a"></a>
+					<a href="">
+						<div id="search_logo_d"></div>
+					</a>
+				</div>
+				<div class="search">
+					<p>
+						<ul id="search_top">
+							<li><a href="" class="search_on">网页</a></li>
+							<li><a href="">新闻</a></li>
+							<li><a href="">视频</a></li>
+							<li><a href="">图片</a></li>
+							<li><a href="">音乐</a></li>
+							<li><a href="">微博</a></li>
+							<li><a href="">地图</a></li>
+							<li><a href="">问答</a></li>
+							<li><a href="">购物</a></li>
+							<li><a href="">机票</a></li>
+							<li><a href="">汽车</a></li>
+						</ul>
+					</p>
+
+					<p>
+						<div id="search_input">
+							<input type="text" name=""/>
+							<a href="" id="search_i_a">
+								<span id="search_i_r"></span>
+							</a>
+						</div>
+						<div class="search_tuijian" id="search_tuijian" style="display:none">
+							<a href="">
+								<span class="hot">1</span>
+								<span class="hot_word1">多省公布养老金规则明细</span>
+							</a>
+							<a href="">
+								<span class="hot">2</span>
+								<span class="hot_word2">马蓉挂名王宝强新片</span>
+								<span class="hot_new"></span>
+							</a>
+							<a href="">
+								<span class="hot">3</span>
+								<span class="hot_word3">深圳美女律师失踪38天</span>
+								<span class="hot_new"></span>
+							</a>
+							<a href="">
+								<span class="nothot">4</span>
+								<span class="hot_word4">阴魂女尸卖到二三十万</span>
+							</a>
+							<a href="">
+								<span class="nothot">5</span>
+								<span class="hot_word5">装备全靠打 级别全靠升</span>
+							</a>
+							<a href="">
+								<span class="nothot">6</span>
+								<span class="hot_word6">王澜老公日本酒店放水泄愤</span>
+							</a>
+							<a href="">
+								<span class="nothot">7</span>
+								<span class="hot_word7">周杰伦新作全程无尿点</span>
+							</a>
+							<a href="">
+								<span class="nothot">8</span>
+								<span class="hot_word8">林志玲称不排除闪婚</span>
+							</a>
+							<a href="">
+								<span class="nothot">9</span>
+								<span class="hot_word9">录性爱音频敲诈女子</span>
+								<span class="hot_new"></span>
+							</a>
+							<a href="">
+								<span class="nothot">10</span>
+								<span class="hot_word10">少女疑被协警掐死</span>
+								<span id="checkword">&nbsp;&nbsp;由360搜索提供</span>
+								<span id="checkbox1" >
+									<input type="checkbox" value=""/>不再自动显示
+								</span>
+							</a>
+						</div>
+					</p>
+					<p>
+						<div id="search_bo">
+							<ul id="search_bottom">
+								<li>
+									<a href="" class="haspng" id="haspng_set">
+										<span class="chilun"></span>
+									</a>
+									<div id="guanbi" style="display:none;">
+										<p><input type="checkbox" />编辑</p>
+										<p><input type="checkbox" />关闭</p>
+									</div>
+								</li>
+								<li><a href="">百度地图</a></li>
+								<li><a href="">雨伞</a></li>
+								<li><a href="">ae模板</a></li>
+								<li><a href="">W3School</a></li>
+								<li><a href="">iphone7亮黑炒到两万</a></li>
+								<li><a href="">张馨予素颜照</a></li>
+								<li>
+									<a href="#so-hotlist" id="search_i_xiala">
+										<span class="search_i_ximg" id="search_i_ximg_i"></span>
+									</a>
+									<div id="so-hotlist" class="somedisabled">
+										<ul>
+											<li>
+												<a href="">
+													<img src="https://s.ssl.qhimg.com/ssl/52166db8c450f68d.ico">
+													<span>iphone7亮黑色炒到两万</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://s.ssl.qhimg.com/ssl/52166db8c450f68d.ico">
+													<span>MH370坠机真相</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://s.ssl.qhimg.com/ssl/52166db8c450f68d.ico">
+													<span>乔任梁追思会</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://s.ssl.qhimg.com/ssl/52166db8c450f68d.ico">
+													<span>买苹果手机遭辞退</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t013e77cbd9684c6bfb.ico">
+													<span>爱奇艺</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t010fb5a321c9704e03.ico">
+													<span>4399游戏</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p2.ssl.qhimg.com/t0156b4f1b43a52f979.png">
+													<span>斗鱼</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t01f238a1ee12512ac7.ico">
+													<span>优酷</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t013ef88dfba65a1fb4.ico">
+													<span>熊猫tv</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t0194c2350d3de0883d.ico">
+													<span>哔哩哔哩</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t015743bddb59541f55.ico">
+													<span>虎牙直播</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t01d85dd9c7f707073a.bmp">
+													<span>联合早报网</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t0103169447b86a4d4b.ico">
+													<span>腾讯</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t01cd217f81a5f41e6d.ico">
+													<span>阿里巴巴</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t01ac78fa7e2e7a7d0f.ico">
+													<span>腾讯视频</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t01993d389cca12d530.png">
+													<span>斗鱼tv</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t01b2cc4b9f98de1251.ico">
+													<span>淘宝</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t011544bc56b9d678d8.ico">
+													<span>qq空间</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t012dc4708f3f5acda8.ico">
+													<span>7k7k小游戏</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t0133d0304db0152ebc.ico">
+													<span>电影天堂</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t013506198e831724fe.ico">
+													<span>新商联盟</span>
+												</a>
+											</li>
+											<li>
+												<a href="">
+													<img src="https://p0.ssl.qhimg.com/t016c40ad32a0db73fe.ico">
+													<span>凤凰网</span>
+												</a>
+											</li>
+
+										</ul>
+									</div>
+								</li>
+							</ul>
+						</div>
+					</p>
+				</div>
+				<div class="btn">
+					<input type="button" id="submitAll" value="搜一下"/>
+				</div>
+				<div class="search_ads">
+					<a href="">检测造假将被列黑名单</a>
+				</div>
+			</div><!--search栏-->
+
+			<div class="clearfix"></div>
+			
+			<!--钢琴栏-->
+			<div id="bar">
+				<ul class="piano">
+					<li><span class="tubiao"></span><a href="">推荐网站</a></li>
+					<li><span class="tubiao xwtt"></span><a href="">新闻头条</a></li>
+					<li><span class="tubiao dsj"></span><a href="">电视剧</a></li>
+					<li><span class="tubiao zxdy"></span><a href="">最新电影</a></li>
+					<li><span class="tubiao xyx"></span><a href="">小游戏</a></li>
+					<li><span class="tubiao xsdq"></span><a href="">小说大全</a></li>
+					<li><span class="tubiao lydj"></span><a href="">旅游度假</a></li>
+					<li><span class="tubiao wsgw"></span><a href="">网上购物</a></li>
+					<li><span class="tubiao hyth"></span><a href="">好药特惠</a></li>
+					<li>
+						<a href=""><span class="gqyy kaiqi"></span></a>
+						<div class="tan_list" id="tan_list1">
+							<a href=""><span class="tubiao2"></span></a>
+						</div>
+						<div class="tan_list_h" id="tanlist_h" style="display:none">
+							<a href="">
+								<span class="tubiao2_kptq kptq"></span>
+								<span class="">看谱弹琴</span>
+							</a>
+							<a href="">
+								<span class="tubiao2_kptq lzgqq"></span>
+								<span class="">录制钢琴曲</span>
+							</a>
+							<a href="">
+								<span class="orange">&nbsp;&nbsp;范玮琪弹钢琴>></span>
+								<span></span>
+							</a>
+							<a href="">
+								<span class="">&nbsp;&nbsp;查看弹奏攻略>></span>
+								<span></span>
+							</a>
+						</div>
+					</li>
+				</ul>
+				<ul class="websit">
+					<li><a href="">人民网</a></li>
+					<li><a href="">新华网</a></li>
+					<li><a href="">央视网</a></li>
+					<li><a href="">中国网</a></li>
+					<li><a href="">国际在线</a></li>
+					<li><a href="">中国日报网</a></li>
+					<li><a href="">中国经济网</a></li>
+					<li><a href="">光明网</a></li>
+					<li><a href="">央广网</a></li>
+					<li><a href="">求是网</a></li>
+					<li><a href="">中国青年网</a></li>
+					<li><a href="">网信网</a></li>
+				</ul>
+			</div><!--钢琴栏-->
+
+			<script type="text/javascript" src="js/mainTop.js"></script>
+			
+			<!--中部链接展示区-->
+			<div id="mainWebsite_a">
+
+				<!--m_a_show栏-->
+				<div class="m_a_show">
+					<ul>
+						<li><a href="">360搜索</a><span class="bull">&bull;</span><a href="">商城</a></li>
+						<li><a href="">新浪</a><span class="bull">&bull;</span><a href="">微博</a></li>
+						<li><a href="" class="tjimg tjimg-tianmao">天猫</a><span class="bull">&bull;</span><a href="">精选</a></li>
+						<li><a href="">搜狐</a><span class="bull">&bull;</span><a href="">视频</a></li>
+						<li><a href="">网易</a><span class="bull">&bull;</span><a href="">邮箱</a></li>
+						<li><a href="">凤凰</a><span class="bull">&bull;</span><a href="">军事</a></li>
+						<li><a href="">360游戏</a></li>
+						<li><a href="">淘宝网</a></li>
+						<li><a href="">网上购物</a></li>
+						<li><a href="" class="tjimg tjimg-suningyigou">苏宁易购</a></li>
+						<li><a href="">360</a><span>&bull;</span><a href="">手机卫士</a></li>
+						<li><a href="" class="tjimg tjimg-xiechenglvxing">携程旅行</a></li>
+						<li><a href="">爱淘宝</a></li>
+						<li><a href="" class="tjimg tjimg-360yingshi">360影视</a></li>
+						<li><a href="">聚划算</a></li>
+						<li><a href="" class="orange">国美在线</a></li>
+						<li><a href="">东财</a><span class="bull">&bull;</span><a href="">理财</a></li>
+						<li><a href="">今日热点</a></li>
+						<li><a href="" class="tjimg tjimg-jingdongshangcheng">京东商城</a></li>
+						<li><a href="">58同城</a></li>
+						<li><a href="">太平洋电脑</a></li>
+						<li><a href="">世纪佳缘</a></li>
+						<li><a href="">同程旅游</a></li>
+						<li><a href="">中关村在线</a></li>
+					</ul>
+					<hr id="hr"/>
+					<ul>
+						<li><a href="">汽车之家</a></li>
+						<li><a href="">易 车 网</a></li>
+						<li><a href="">太平洋汽车</a></li>
+						<li><a href="">安居客</a></li>
+						<li><a href="">折800</a></li>
+						<li><a href="">苏宁手机</a></li>
+						<li><a href="">驴妈妈旅游</a></li>
+						<li><a href="">百度</a><span class="bull">&bull;</span><a href="">热搜</a></li>
+						<li><a href="">赶集网</a></li>
+						<li><a href="">斗鱼直播</a></li>
+						<li><a href="" class="tjimg tjimg-tuniu">途牛旅游网</a></li>
+						<li><a href="">1号店</a></li>
+						<li><a href="">珍爱婚恋网</a></li>
+						<li><a href="">乐居二手房</a></li>
+						<li><a href="">亚马逊</a></li>
+						<li><a href="">艺龙网</a></li>
+						<li><a href="">去哪儿网</a></li>
+						<li><a href="">沪江网校</a></li>
+						<li><a href="">招商银行</a></li>
+						<li><a href="">12306官网</a></li>
+						<li><a href="" class="tjimg tjimg-weipinghui">唯品会</a></li>
+						<li><a href="" class="orange">聚美优品</a></li>
+						<li><a href="">房天下</a></li>
+						<li><a href="">知乎</a></li>
+						<li><a href="">乐视商城</a></li>
+						<li><a href="">花椒直播</a></li>
+						<li><a href="">360娱乐</a></li>
+						<li><a href="">六间房</a></li>
+						<li><a href="">携程机票</a></li>
+						<li><a href="">在线教育</a></li>
+					</ul>
+				</div><!--m_a_show栏-->
+				
+				<!--m_a_l栏-->
+				<div class="m_a_l">
+					<div class="lthot">
+						<img src="https://p1.ssl.qhimg.com/t0190847c87fa6edb6f.png" alt="" />
+						<a href="">毛俊杰带你走进<王牌逗特工></a>
+					</div>
+
+					<!--HOT栏-->
+					<div class="mal_list">
+						<ul>
+							<li>
+								<span class="tubiao3 xw"></span>
+								<a href="">新闻</a>
+								<span>&bull;</span>
+								<a href="">视频</a>
+							</li>
+							<li>
+								<span class="tubiao3 dy"></span>
+								<a href="">电影</a>
+								<span>&bull;</span>
+								<a href="">电视剧</a>
+							</li>
+							<li>
+								<span class="tubiao3 gw"></span>
+								<a href="">购物</a>
+								<span>&bull;</span>
+								<a href="">海淘</a>
+							</li>
+							<li>
+								<span class="tubiao3 lc"></span>
+								<a href="">购物</a>
+								<span>&bull;</span>
+								<a href="">理财</a>
+							</li>
+							<li>
+								<span class="tubiao3 hq"></span>
+								<a href="">活期</a>
+								<span>&bull;</span>
+								<a href="">基金</a>
+							</li>
+							<li>
+								<span class="tubiao3 xs"></span>
+								<a href="">小说</a>
+								<span>&bull;</span>
+								<a href="">商城</a>
+							</li>
+							<li>
+								<span class="tubiao3 yx"></span>
+								<a href="">游戏</a>
+								<span>&bull;</span>
+								<a href="">小游戏</a>
+							</li>
+							<li>
+								<span class="tubiao3 dm"></span>
+								<a href="">动漫</a>
+								<span>&bull;</span>
+								<a href="">直播秀</a>
+							</li>
+							<li>
+								<span class="tubiao3 gx"></span>
+								<a href="">搞笑</a>
+								<span>&bull;</span>
+								<a href="">解梦</a>
+							</li>
+							<li>
+								<span class="tubiao3 jy"></span>
+								<a href="">教育</a>
+								<span>&bull;</span>
+								<a href="">度假</a>
+							</li>
+							<li>
+								<span class="tubiao3 cx"></span>
+								<a href="">查询</a>
+								<span>&bull;</span>
+								<a href="">星座</a>
+							</li>
+							<li>
+								<span class="tubiao3 jp"></span>
+								<a href="">机票</a>
+								<span>&bull;</span>
+								<a href="">火车票</a>
+							</li>
+							<li>
+								<span class="tubiao3 sj"></span>
+								<a href="">手机</a>
+								<span>&bull;</span>
+								<a href="">娱乐</a>
+							</li>
+							<li>
+								<span class="tubiao3 hy"></span>
+								<a href="">好药</a>
+								<span>&bull;</span>
+								<a href="">旅游</a>
+							</li>
+							<li id="Mxyule" style="display:block">
+								<div class="xyule">
+									<div class="xsj"></div>
+									<a href="">Baby怀孕！明星生娃为何备受关注？</a>
+									<span class="tuichu"></span>
+								</div>
+							</li>
+						</ul>
+					</div><!--HOT栏-->
+				</div><!--m_a_l栏-->
+
+				<!--发现你喜欢右边所有栏-->
+				<div class="m_a_fxnxh">
+
+					<!--发现你喜欢-->
+					<div class="fxnxh">
+						<div class="fxnxh_hd">
+							<h4>发现你喜欢</h4>
+							<div id="lunboword">
+								<a href=""></a>
+								<span class="Dfk on" id="span1"></span>
+								<span class="Dfk"></span>
+								<span class="Dfk"></span>
+								<a href=""></a>
+							</div>
+						</div>
+						<hr id="hr">
+						<ul>
+							<li>
+								<a href="">游戏</a>
+								<a href="">变态版游戏</a>
+								<a href="">无人民币玩家</a>
+								<a href="">蓝月传奇</a>
+								<a href="">永久免费游戏</a>
+								<a href="">装备靠打能卖</a>
+								<a href="">装备RMB回收</a>
+								<a href="">换一换</a>
+							</li>
+							<li>
+								<a href="">热门</a>
+								<a href="">能赚钱的游戏</a>
+								<a href="">RMB回收装备</a>
+								<a href="">长期玩家首选</a>
+								<a href="">装备100%靠打</a>
+								<a href="">盗墓笔记</a>
+								<a href="">非RMB玩家来</a>
+								<a href="">换一换</a>
+							</li>
+							<li>
+								<a href="">购物</a>
+								<a href="">万国手表</a>
+								<a href="">苏宁大清仓</a>
+								<a href="">清仓特价</a>
+								<a href="">十元专区</a>
+								<a href="">女装新品19.9</a>
+								<a href="">8块8抢购</a>
+								<a href="">换一换</a>
+							</li>
+							<li>
+								<a href="">生活</a>
+								<a href="">买手表上万表</a>
+								<a href="">碧桂园生态城</a>
+								<a href="">新股如何中签</a>
+								<a href="">年化率12%起</a>
+								<a href="">美度手表</a>
+								<a href="">快递物流查询</a>
+								<a href="">换一换</a>
+							</li>
+							<li>
+								<a href="">财经</a>
+								<a href="">三股票将爆发</a>
+								<a href="">此股跌无可跌</a>
+								<a href="">故事重大利好</a>
+								<a href="">车险巨惠让利</a>
+								<a href="">应急贷款</a>
+								<a href="">理财抢红包</a>
+								<a href="">换一换</a>
+							</li>
+							<li>
+								<a href="">旅游</a>
+								<a href="">去哪儿网</a>
+								<a href="">携程旅游官网</a>
+								<a href="">南方航空官网</a>
+								<a href="">南航机票预订</a>
+								<a href="">我是旅行家</a>
+								<a href="">南方航空</a>
+								<a href="">换一换</a>
+							</li>
+						</ul>
+					</div><!--发现你喜欢-->
+
+					<!--发现你喜欢下一栏的单行-->
+					<div class="fxnxh_dh">
+						<ul>
+							<a href="">惠品折扣</a>
+							<a href="" class="orange">驴妈妈</a>
+							<a href="">爆笑囧图</a>
+							<a href="">花椒直播</a>
+							<a href="">沪江外语</a>
+							<a href="">小游戏</a>
+							<a href="">购物特卖</a>
+							<a href="">教你理财</a>
+							<a href="">9.9元包邮</a>
+							<a href="">特价旅游</a>
+						</ul>
+					</div><!--发现你喜欢下一栏的单行-->
+
+					<!--m_a_复用栏1,发现你喜欢复用第一栏-->
+					<div class="m_a_fuyong tz1">
+						<ul class="m_a_f1_a">
+							<li><a href="">游戏</a></li>
+							<li><a href="">电影</a></li>
+							<li><a href="">电视剧</a></li>
+							<li><a href="">小说</a></li>
+							<li><a href="">音乐</a></li>
+							<li><a href="">购物</a></li>
+							<li><a href="">海淘</a></li>
+							<li><a href="">服装</a></li>
+							<li><a href="">聚划算</a></li>
+							<li><a href="">游戏精选</a></li>
+						</ul>
+						<div class="fuyonglist">
+							<ul >
+								<li><a href="">页游</a></li>
+								<li><a href="">盗墓笔记</a></li>
+								<li><a href="" class="orange">魔法王座</a></li>
+								<li><a href="">决战武林</a></li>
+								<li><a href="">青云志</a></li>
+								<li><a href="">赤月传说2</a></li>
+								<li><a href="">热血战歌</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							 <ul>
+								<li><a href="">影视</a></li>
+								<li><a href="">电影</a></li>
+								<li><a href="">电视剧</a></li>
+								<li><a href="">综艺</a></li>
+								<li><a href="">娱乐</a></li>
+								<li><a href="">动漫</a></li>
+								<li><a href="">电视直播</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">视频</a></li>
+								<li><a href="">爱奇艺高清</a></li>
+								<li><a href="">芒果TV</a></li>
+								<li><a href="">腾讯视频</a></li>
+								<li><a href="">乐视高清</a></li>
+								<li><a href="">六间房秀场</a></li>
+								<li><a href="">新浪视频</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">小说</a></li>
+								<li><a href="">晋江文学城</a></li>
+								<li><a href="">言情小说吧</a></li>
+								<li><a href="">纵横中文网</a></li>
+								<li><a href="">飞卢小说网</a></li>
+								<li><a href="">17K小说</a></li>
+								<li><a href="">360小说</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">音乐</a></li>
+								<li><a href="">酷狗音乐</a></li>
+								<li><a href="">一听音乐网</a></li>
+								<li><a href="">九酷音乐网</a></li>
+								<li><a href="">音乐主播秀</a></li>
+								<li><a href="">酷狗美女秀</a></li>
+								<li><a href="">酷我聚星</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">游戏</a></li>
+								<li><a href="">4399小游戏</a></li>
+								<li><a href="">7K7K小游戏</a></li>
+								<li><a href="">2144游戏</a></li>
+								<li><a href="">魔兽世界</a></li>
+								<li><a href="">蓝月传奇</a></li>
+								<li><a href="">YOUXI网</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">购物</a></li>
+								<li><a href="">京东商城</a></li>
+								<li><a href="">苏宁易购</a></li>
+								<li><a href="">亚马逊</a></li>
+								<li><a href="" class="tjimg tjimg-tianmao">天猫精选</a></li>
+								<li><a href="">国美在线</a></li>
+								<li><a href="">网上购物</a></li>
+								<li><a href="">更多>></a></li>
+							</ul> 
+						</div>
+					</div><!--m_a_复用栏1,发现你喜欢复用第一栏-->
+
+					<!--m_a_复用栏2,发现你喜欢复用第二栏-->
+					<div class="m_a_fuyong tz2">
+						<ul class="m_a_f1_a">
+							<li><a href="">新车</a></li>
+							<li><a href="">银行</a></li>
+							<li><a href="">信用卡</a></li>
+							<li><a href="">商城</a></li>
+							<li><a href="">聚划算</a></li>
+							<li><a href="">淘宝买卖</a></li>
+							<li><a href="">逛女装</a></li>
+							<li><a href="">交友</a></li>
+							<li><a href="">社区</a></li>
+							<li><a href="">违章</a></li>
+						</ul>
+						<div class="fuyonglist">
+							<ul>
+								<li><a href="">汽车</a></li>
+								<li><a href="">易车网</a></li>
+								<li><a href="">汽车之家</a></li>
+								<li><a href="">易车二手车</a></li>
+								<li><a href="" class="orange">瓜子二手车</a></li>
+								<li><a href="">太平洋汽车</a></li>
+								<li><a href="">凤凰汽车</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">银行</a></li>
+								<li><a href="">工商银行</a></li>
+								<li><a href="">建设</a><span class="bull">&bull;</span><a href="">招商</a></li>
+								<li><a href="">中国银行</a></li>
+								<li><a href="">农业银行</a></li>
+								<li><a href="">支付宝</a></li>
+								<li><a href="">交通银行</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">商城</a></li>
+								<li><a href="">京东商城</a></li>
+								<li><a href="">360商城</a></li>
+								<li><a href="">海淘精选</a></li>
+								<li><a href="">手机商城</a></li>
+								<li><a href="">聚美优品</a></li>
+								<li><a href="">购物商城</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">特卖</a></li>
+								<li><a href="">网易考拉</a></li>
+								<li><a href="">唯品会</a></li>
+								<li><a href="">蜜芽网</a></li>
+								<li><a href="">洋码头</a></li>
+								<li><a href="">上网海淘</a></li>
+								<li><a href="">ebay</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">交友</a></li>
+								<li><a href="">世纪佳缘网</a></li>
+								<li><a href="">珍爱婚恋网</a></li>
+								<li><a href="">百合交友网</a></li>
+								<li><a href="">非诚勿扰</a></li>
+								<li><a href="">六间房交友</a></li>
+								<li><a href="">我们约会吧</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">社区</a></li>
+								<li><a href="">开心</a><span class="bull">&bull;</span><a href="">谈谈</a></li>
+								<li><a href="">QQ空间</a></li>
+								<li><a href="">天涯</a></li>
+								<li><a href="">猫扑</a></li>
+								<li><a href="">新浪微博</a></li>
+								<li><a href="">人人</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+						</div>
+					</div> <!--m_a_复用栏2,发现你喜欢复用第二栏-->
+					
+					<!--m_a_lyule栏-发现你喜欢复用第三栏-->
+					<div class="m_a_fuyong tz3">
+						<ul class="m_a_f1_a">
+							<li><a href="">新闻</a></li>
+							<li><a href="">军事</a></li>
+							<li><a href="">体育</a></li>
+							<li><a href="">NBA</a></li>
+							<li><a href="">财经</a></li>
+							<li><a href="">贷款</a></li>
+							<li><a href="">网游</a></li>
+							<li><a href="">小游戏</a></li>
+							<li><a href="">棋牌</a></li>
+							<li><a href="">背单词</a></li>
+							<li><a href="">考试</a></li>
+							<li><a href="">公务员</a></li>
+						</ul>
+						<div class="fuyonglist">
+							<ul>
+								<li><a href="">邮箱</a></li>
+								<li><a href="">163邮箱</a></li>
+								<li><a href="">126邮箱</a></li>
+								<li><a href="">阿里云</a></li>
+								<li><a href="">QQ邮箱</a></li>
+								<li><a href="">新浪邮箱</a></li>
+								<li><a href="">360安全邮件</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">新闻</a></li>
+								<li><a href="">头条新闻</a></li>
+								<li><a href="">搜狐</a><span class="bull">&bull;</span><a href="">未来网</a></li>
+								<li><a href="">网易新闻</a></li>
+								<li><a href="">CRI</a><span class="bull">&bull;</span><a href="">网信网</a></li>
+								<li><a href="">环球</a><span class="bull">&bull;</span><a href="">中国网</a></li>
+								<li><a href="">凤凰资源</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">军事</a></li>
+								<li><a href="">中华网军事</a></li>
+								<li><a href="">铁血军事</a></li>
+								<li><a href="">米尔军情网</a></li>
+								<li><a href="">环球新军事</a></li>
+								<li><a href="">新浪军事</a></li>
+								<li><a href="">今日军事</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">体育</a></li>
+								<li><a href="">新浪体育</a></li>
+								<li><a href="">搜狐体育</a></li>
+								<li><a href="">网易体育</a></li>
+								<li><a href="">头条体育</a></li>
+								<li><a href="">乐视体育</a></li>
+								<li><a href="">虎扑体育</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">财经</a></li>
+								<li><a href="">东方财富网</a></li>
+								<li><a href="">金融界</a></li>
+								<li><a href="">宜人理财</a></li>
+								<li><a href="">你财富</a></li>
+								<li><a href="">网易贵金属</a></li>
+								<li><a href="">证券之星</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">网游</a></li>
+								<li><a href="" class="tjimg tjimg-liehuochuanqi">烈火传奇</a></li>
+								<li><a href="">热血传奇</a></li>
+								<li><a href="">贪玩蓝月</a></li>
+								<li><a href="">范伟打天下</a></li>
+								<li><a href="">散人传奇</a></li>
+								<li><a href="">斗罗大陆</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+						</div>
+					</div><!--m_a_lyule栏,发现你喜欢复用第三栏-->
+
+					<!--发现你喜欢复用第四栏-->
+					<div class="m_a_fuyong tz4">
+						<ul class="m_a_f1_a">
+							<li><a href="">房产</a></li>
+							<li><a href="">装修</a></li>
+							<li><a href="">女性</a></li>
+							<li><a href="">时尚</a></li>
+							<li><a href="">减肥</a></li>
+							<li><a href="">招聘</a></li>
+							<li><a href="">电脑</a></li>
+							<li><a href="">手机</a></li>
+							<li><a href="">保险</a></li>
+							<li><a href="">度假</a></li>
+							<li><a href="">酒店</a></li>
+						</ul>
+						<div class="fuyonglist">
+							<ul>
+								<li><a href="">生活</a></li>
+								<li><a href="">赶集网</a></li>
+								<li><a href="">百姓网</a></li>
+								<li><a href="">房多多</a></li>
+								<li><a href="">安居客房产</a></li>
+								<li><a href="">乐乐达</a></li>
+								<li><a href="">58同城</a></li>
+								<li><a href="">更多>></a></li>
+							</ul>
+							<ul>
+								<li><a href="">金融</a></li>
+								<li><a href="">平安贷款</a></li>
+								<li><a href="">宜人贷贷款</a></li>
+								<li><a href="">拍拍贷理财</a></li>
+								<li><a href="">团贷网理财</a></li>
+								<li><a href="">新浪财经</a></li>
+								<li><a href="">网易财经</a></li>
+								<li><a href="">更多</a></li>
+							</ul>
+							<ul>
+								<li><a href="">彩票</a></li>
+								<li><a href="">360彩票</a></li>
+								<li><a href="">双色球</a></li>
+								<li><a href="">竞猜NBA</a></li>
+								<li><a href="">分析图表</a></li>
+								<li><a href="">大乐透</a></li>
+								<li><a href="">福彩3D</a></li>
+								<li><a href="">更多</a></li>
+							</ul>
+							<ul>
+								<li><a href="">旅游</a></li>
+								<li><a href="">携程旅行网</a></li>
+								<li><a href="">去哪儿机票</a></li>
+								<li><a href="" class="tjimg tjimg-tuniu">途牛网</a></li>
+								<li><a href="">同程旅游网</a></li>
+								<li><a href="">艺龙订酒店</a></li>
+								<li><a href="">驴妈妈</a></li>
+								<li><a href="">更多</a></li>
+							</ul>
+							<ul>
+								<li><a href="">女性</a></li>
+								<li><a href="">新浪女性</a></li>
+								<li><a href="">嘉人网</a></li>
+								<li><a href="">爱秀美</a></li>
+								<li><a href="">性感女人</a></li>
+								<li><a href="">ELLE中国</a></li>
+								<li><a href="" class="tjimg tjimg-360yule">360娱乐</a></li>
+								<li><a href="">更多</a></li>
+							</ul>
+							<ul>
+								<li><a href="">直播</a></li>
+								<li><a href="">花椒直播</a></li>
+								<li><a href="">触手TV</a></li>
+								<li><a href="">来疯直播</a></li>
+								<li><a href="">悟空TV</a></li>
+								<li><a href="">熊猫</a><span class="bull">&bull;</span><a href="">斗鱼</a></li>
+								<li><a href="">AcFun</a><span class="bull">&bull;</span><a href="">哔哩</a></li>
+								<li><a href="">更多</a></li>
+							</ul>
+							<ul>
+								<li><a href="">招聘</a></li>
+								<li><a href="">前程无忧</a></li>
+								<li><a href="">智联招聘</a></li>
+								<li><a href="">赶集招聘</a></li>
+								<li><a href="">大街招聘网</a></li>
+								<li><a href="">猎聘网高薪</a></li>
+								<li><a href="">58同城招聘</a></li>
+								<li><a href="">更多</a></li>
+							</ul>
+							<ul>
+								<li><a href="">电脑</a></li>
+								<li><a href="">中关村在线</a></li>
+								<li><a href="">天极网</a></li>
+								<li><a href="">太平洋电脑</a></li>
+								<li><a href="">苹果官网</a></li>
+								<li><a href="">华硕官网</a></li>
+								<li><a href="">智能硬件</a></li>
+								<li><a href="">更多</a></li>
+							</ul>
+							<ul>
+								<li><a href="">手机</a></li>
+								<li><a href="">中关村手机</a></li>
+								<li><a href="">太平洋手机</a></li>
+								<li><a href="">手机中国</a></li>
+								<li><a href="">移动</a><span class="bull">&bull;</span><a href="">联通</a></li>
+								<li><a href="">360手机</a></li>
+								<li><a href="">乐视手机</a></li>
+								<li><a href="">更多</a></li>
+							</ul>
+							<ul>
+								<li><a href="">手游</a></li>
+								<li><a href="">开心消消乐</a></li>
+								<li><a href="">剑侠世界</a></li>
+								<li><a href="">劲舞团</a></li>
+								<li><a href="">阴阳师</a></li>
+								<li><a href="">乱轰三国志</a></li>
+								<li><a href="">喜洋洋快跑</a></li>
+								<li><a href="">更多</a></li>
+							</ul>
+							<ul>
+								<li><a href="">酷站</a></li>
+								<li><a href="">知乎</a></li>
+								<li><a href="">美女直播</a></li>
+								<li><a href="">28商机网</a></li>
+								<li><a href="">i 春秋</a></li>
+								<li><a href="">豆瓣</a></li>
+								<li><a href="">78创业商机</a></li>
+								<li><a href="">更多</a></li>
+							</ul>
+							<ul>
+								<li><a href="">查询</a></li>
+								<li><a href="">火车票</a></li>
+								<li><a href="">机票查询</a></li>
+								<li><a href="">快递查询</a></li>
+								<li><a href="">违章查询</a></li>
+								<li><a href="">法律咨询</a></li>
+								<li><a href="">学英语月</a></li>
+								<li><a href="">更多</a></li>
+							</ul>
+						</div>
+					</div><!--发现你喜欢复用第四栏-->
+
+					<!--发现你喜欢最后第五栏-->
+					<div class="fxnxh_last" id="fxnxh-last">
+						<ul>
+							<li>
+								<a href="">教育</a>
+								<a href="">2016年出国留学攻略盘点121313132113131321321</a>
+							</li>
+							<li>
+								<a href="">游戏</a>
+								<a href="">美女与枪！不玩会后悔的</a>
+							</li>
+							<li>
+								<a href="">购物</a>
+								<a href="">秋冬新款服装鞋包低价折扣</a>
+							</li>
+							<li>
+								<a href="">机票</a>
+								<a href="">热门城市特价机票大放送</a>
+							</li>
+							<li>
+								<a href="">娱乐</a>
+								<a href="">皮特朱莉离婚不能为孩子忍</a>
+							</li>
+							<li>
+								<a href="">理财</a>
+								<a href="">他们这样炒股都赚翻了</a>
+							</li>
+							<li>
+								<a href="">中学</a>
+								<a href="">开学计划：掌握每个知识点</a>
+							</li>
+							<li>
+								<a href="">度假</a>
+								<a href="">假期出游限时特卖抢先购</a>
+							</li>
+							<li>
+								<a href="">公考</a>
+								<a href="">国家公务员考试申论热点</a>
+							</li>
+						</ul>
+					</div><!--发现你喜欢最后第五栏-->	
+				</div><!--发现你喜欢右边所有栏-->
+
+				<!--左侧轮播组合栏1-->
+				<div class="lunbozuhe">
+					<div class="items">
+						<div class="items_one">
+							<img src="https://p1.ssl.qhimg.com/t013c214a976f8d52e7.jpg">
+							<a href="">龙武2今日内测 野外BOSS爆现金</a>
+							<a href="">上班族专属仙侠网游 非RMB必玩</a>
+						</div>
+						<div class="items_two">
+							<img src="https://p1.ssl.qhimg.com/t0173ff8d812ee79ca6.jpg">
+							<a href="">网传娱乐圈女明星陪酒价格一览</a>
+							<a href="">美女网红给你送来一大波福利</a>
+						</div>
+						<div class="items_three lbon">
+							<img src="https://p1.ssl.qhimg.com/t0179d84acde67841c6.jpg">
+							<a href="">盗墓笔记探险 日本人竟为这个</a>
+							<a href="">酷炫技能好牛逼 真轻功带你飞</a>
+						</div>
+					</div>
+					<a class="slide left_Up"></a>
+					<a class="slide right_Next"></a>
+				</div><!--左侧轮播组合栏1-->
+				
+				<!--左侧轮播组合栏2-选择区-->
+				<div class="lunboChoice">
+					<div class="lbC_hd">
+						<h3>猜你爱看</h3>
+						<div class="hyx-img">
+							<div class="bg"></div>
+							<div class="bg"></div>
+							<div class="bg"></div>
+							<div class="bg"></div>
+						</div>
+						<a href="">换一下</a>
+					</div>
+				</div><!--左侧轮播组合栏2-选择区-->
+				
+				<!-- <div class="clearfix"></div> -->
+				<!--左侧轮播组合栏标题与图复用1-->
+				<div class="zcfy-ti">
+					<div class="zcfy-t">
+						<ul>
+							<li class="zcfy-t-on" id="toutiao" onclick="btnClick();">头条</li>
+							<li class="" id="bagua" onclick="btnClick();">八卦</li>
+							<li class="" id="kantianxia" onclick="btnClick();">看天下</li>
+							<li class="" id="shehui" onclick="btnClick();">社会</li>
+						</ul>
+					</div>
+
+					<div class="toutiao onlive">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t015c2f63ce4ed61b06.jpg" alt="">
+										<span class="txtbg">跟牛人炒股 1月净赚1辆车</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t015ba39d7d28ad81c4.jpg" alt="">
+										<span class="txtbg">女子开车给孩子喂奶 被罚200元</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t011512fab44e05f9fc.jpg" alt="">
+										<span class="txtbg">中国大批战机赴西太模拟打实战</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t019cdf5a44ba0b8dde.jpg" alt="">
+										<span class="txtbg">零成本赚钱：揭秘高手炒股术</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">河南桐柏发现特大金矿  可挖80年</a></li>
+								<li><i class="dian">&bull;</i><a href="">落马官员与10多名女子有性关系</a></li>
+								<li><i class="dian">&bull;</i><a href="">深圳官方辟谣：鸽子笼不是住宅</a></li>
+								<li><i class="dian">&bull;</i><a href="">解密儿童用药之困  超级天眼启动</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="bagua">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01229f0e9b8ac7aa0c.jpg" alt="">
+										<span class="txtbg">"睫毛精"刘亦菲仙气足全靠它</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01917846b831410d18.jpg" alt="">
+										<span class="txtbg">50岁苏菲玛索低胸装风韵犹存</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01eb464d916e52e095.jpg" alt="">
+										<span class="txtbg">盘点十大胸大有脑的女明星</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t011441a8feab4cfd99.jpg" alt="">
+										<span class="txtbg">马丽成名画风突变 晒照秀美胸</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">郭德纲旧情人曝光 现任是郭徒弟</a></li>
+								<li><i class="dian">&bull;</i><a href="">侯佩岑被问姐弟情史 险落泪</a></li>
+								<li><i class="dian">&bull;</i><a href="">邓超自拍"告白片"为孙俪庆生</a></li>
+								<li><i class="dian">&bull;</i><a href="">宋茜杨洋避而不见 曝分手原因</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="kantianxia">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t014893a4bb7219c885.jpg" alt="">
+										<span class="txtbg">萨德易位 或抵消中国一战略能力</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01033fdc87448f04f7.jpg" alt="">
+										<span class="txtbg">拉屎娃娃上市 希拉里变"排便者</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01833ed5391ff50cbc.jpg" alt="">
+										<span class="txtbg">5千年前木乃伊开口 第1句竟是</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01c786910100989645.jpg" alt="">
+										<span class="txtbg">网红美女晒健身照 长腿太诱人</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">盘点古人亮瞎眼的避孕黑科技</a></li>
+								<li><i class="dian">&bull;</i><a href="">果粉自提20斤硬币买iPhone 7</a></li>
+								<li><i class="dian">&bull;</i><a href="">第四炸 三星你还能再抵赖吗?</a></li>
+								<li><i class="dian">&bull;</i><a href="">博士生澳洲下33万黄片被起诉</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="shehui">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01f285eb0eeab07bbf.jpg" alt="">
+										<span class="txtbg">为引官员注意 女子路坑中洗澡</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t010fbb4d1aac6df0aa.jpg" alt="">
+										<span class="txtbg">48对新人在火车上办集体婚礼</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01cccd60e3ec3bc54c.png" alt="">
+										<span class="txtbg">集装箱城中村 百人蜗居每天3元</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01d811771d330be20b.jpg" alt="">
+										<span class="txtbg">女子学院新生着古装行拜师礼</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">怀孕50多天女友逼买房 男子自杀</a></li>
+								<li><i class="dian">&bull;</i><a href="">北大专家称四大名著是成人作品</a></li>
+								<li><i class="dian">&bull;</i><a href="">吉林警方回应"为啥3年不还尸体"</a></li>
+								<li><i class="dian">&bull;</i><a href="">宝宝没眼睛 女子产子后直接崩溃</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+
+				<!--游戏-->
+				<div class="zcfy-ti">
+					<div class="zcfy-t">
+						<ul>
+							<li class="zcfy-t-on" id="toutiao" onclick="btnClick();">游戏</li>
+							<li class="" id="bagua" onclick="btnClick();">最好玩</li>
+							<li class="" id="kantianxia" onclick="btnClick();">最火爆</li>
+							<li class="" id="shehui" onclick="btnClick();">小游戏</li>
+						</ul>
+					</div>
+
+					<div class="toutiao onlive">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t015c2f63ce4ed61b06.jpg" alt="">
+										<span class="txtbg">跟牛人炒股 1月净赚1辆车</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t015ba39d7d28ad81c4.jpg" alt="">
+										<span class="txtbg">女子开车给孩子喂奶 被罚200元</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t011512fab44e05f9fc.jpg" alt="">
+										<span class="txtbg">中国大批战机赴西太模拟打实战</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t019cdf5a44ba0b8dde.jpg" alt="">
+										<span class="txtbg">零成本赚钱：揭秘高手炒股术</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">河南桐柏发现特大金矿  可挖80年</a></li>
+								<li><i class="dian">&bull;</i><a href="">落马官员与10多名女子有性关系</a></li>
+								<li><i class="dian">&bull;</i><a href="">深圳官方辟谣：鸽子笼不是住宅</a></li>
+								<li><i class="dian">&bull;</i><a href="">解密儿童用药之困  超级天眼启动</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="bagua">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01229f0e9b8ac7aa0c.jpg" alt="">
+										<span class="txtbg">"睫毛精"刘亦菲仙气足全靠它</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01917846b831410d18.jpg" alt="">
+										<span class="txtbg">50岁苏菲玛索低胸装风韵犹存</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01eb464d916e52e095.jpg" alt="">
+										<span class="txtbg">盘点十大胸大有脑的女明星</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t011441a8feab4cfd99.jpg" alt="">
+										<span class="txtbg">马丽成名画风突变 晒照秀美胸</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">郭德纲旧情人曝光 现任是郭徒弟</a></li>
+								<li><i class="dian">&bull;</i><a href="">侯佩岑被问姐弟情史 险落泪</a></li>
+								<li><i class="dian">&bull;</i><a href="">邓超自拍"告白片"为孙俪庆生</a></li>
+								<li><i class="dian">&bull;</i><a href="">宋茜杨洋避而不见 曝分手原因</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="kantianxia">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t014893a4bb7219c885.jpg" alt="">
+										<span class="txtbg">萨德易位 或抵消中国一战略能力</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01033fdc87448f04f7.jpg" alt="">
+										<span class="txtbg">拉屎娃娃上市 希拉里变"排便者</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01833ed5391ff50cbc.jpg" alt="">
+										<span class="txtbg">5千年前木乃伊开口 第1句竟是</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01c786910100989645.jpg" alt="">
+										<span class="txtbg">网红美女晒健身照 长腿太诱人</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">盘点古人亮瞎眼的避孕黑科技</a></li>
+								<li><i class="dian">&bull;</i><a href="">果粉自提20斤硬币买iPhone 7</a></li>
+								<li><i class="dian">&bull;</i><a href="">第四炸 三星你还能再抵赖吗?</a></li>
+								<li><i class="dian">&bull;</i><a href="">博士生澳洲下33万黄片被起诉</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="shehui">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01f285eb0eeab07bbf.jpg" alt="">
+										<span class="txtbg">为引官员注意 女子路坑中洗澡</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t010fbb4d1aac6df0aa.jpg" alt="">
+										<span class="txtbg">48对新人在火车上办集体婚礼</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01cccd60e3ec3bc54c.png" alt="">
+										<span class="txtbg">集装箱城中村 百人蜗居每天3元</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01d811771d330be20b.jpg" alt="">
+										<span class="txtbg">女子学院新生着古装行拜师礼</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">怀孕50多天女友逼买房 男子自杀</a></li>
+								<li><i class="dian">&bull;</i><a href="">北大专家称四大名著是成人作品</a></li>
+								<li><i class="dian">&bull;</i><a href="">吉林警方回应"为啥3年不还尸体"</a></li>
+								<li><i class="dian">&bull;</i><a href="">宝宝没眼睛 女子产子后直接崩溃</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!--游戏-->
+
+
+				<!--视频-->
+				<div class="zcfy-ti">
+					<div class="zcfy-t">
+						<ul>
+							<li class="zcfy-t-on" id="toutiao" onclick="btnClick();">视频</li>
+							<li class="" id="bagua" onclick="btnClick();">电视</li>
+							<li class="" id="kantianxia" onclick="btnClick();">电影</li>
+							<li class="" id="shehui" onclick="btnClick();">花边</li>
+						</ul>
+					</div>
+
+					<div class="toutiao onlive">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t015c2f63ce4ed61b06.jpg" alt="">
+										<span class="txtbg">跟牛人炒股 1月净赚1辆车</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t015ba39d7d28ad81c4.jpg" alt="">
+										<span class="txtbg">女子开车给孩子喂奶 被罚200元</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t011512fab44e05f9fc.jpg" alt="">
+										<span class="txtbg">中国大批战机赴西太模拟打实战</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t019cdf5a44ba0b8dde.jpg" alt="">
+										<span class="txtbg">零成本赚钱：揭秘高手炒股术</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">河南桐柏发现特大金矿  可挖80年</a></li>
+								<li><i class="dian">&bull;</i><a href="">落马官员与10多名女子有性关系</a></li>
+								<li><i class="dian">&bull;</i><a href="">深圳官方辟谣：鸽子笼不是住宅</a></li>
+								<li><i class="dian">&bull;</i><a href="">解密儿童用药之困  超级天眼启动</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="bagua">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01229f0e9b8ac7aa0c.jpg" alt="">
+										<span class="txtbg">"睫毛精"刘亦菲仙气足全靠它</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01917846b831410d18.jpg" alt="">
+										<span class="txtbg">50岁苏菲玛索低胸装风韵犹存</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01eb464d916e52e095.jpg" alt="">
+										<span class="txtbg">盘点十大胸大有脑的女明星</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t011441a8feab4cfd99.jpg" alt="">
+										<span class="txtbg">马丽成名画风突变 晒照秀美胸</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">郭德纲旧情人曝光 现任是郭徒弟</a></li>
+								<li><i class="dian">&bull;</i><a href="">侯佩岑被问姐弟情史 险落泪</a></li>
+								<li><i class="dian">&bull;</i><a href="">邓超自拍"告白片"为孙俪庆生</a></li>
+								<li><i class="dian">&bull;</i><a href="">宋茜杨洋避而不见 曝分手原因</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="kantianxia">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t014893a4bb7219c885.jpg" alt="">
+										<span class="txtbg">萨德易位 或抵消中国一战略能力</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01033fdc87448f04f7.jpg" alt="">
+										<span class="txtbg">拉屎娃娃上市 希拉里变"排便者</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01833ed5391ff50cbc.jpg" alt="">
+										<span class="txtbg">5千年前木乃伊开口 第1句竟是</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01c786910100989645.jpg" alt="">
+										<span class="txtbg">网红美女晒健身照 长腿太诱人</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">盘点古人亮瞎眼的避孕黑科技</a></li>
+								<li><i class="dian">&bull;</i><a href="">果粉自提20斤硬币买iPhone 7</a></li>
+								<li><i class="dian">&bull;</i><a href="">第四炸 三星你还能再抵赖吗?</a></li>
+								<li><i class="dian">&bull;</i><a href="">博士生澳洲下33万黄片被起诉</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="shehui">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01f285eb0eeab07bbf.jpg" alt="">
+										<span class="txtbg">为引官员注意 女子路坑中洗澡</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t010fbb4d1aac6df0aa.jpg" alt="">
+										<span class="txtbg">48对新人在火车上办集体婚礼</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01cccd60e3ec3bc54c.png" alt="">
+										<span class="txtbg">集装箱城中村 百人蜗居每天3元</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01d811771d330be20b.jpg" alt="">
+										<span class="txtbg">女子学院新生着古装行拜师礼</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">怀孕50多天女友逼买房 男子自杀</a></li>
+								<li><i class="dian">&bull;</i><a href="">北大专家称四大名著是成人作品</a></li>
+								<li><i class="dian">&bull;</i><a href="">吉林警方回应"为啥3年不还尸体"</a></li>
+								<li><i class="dian">&bull;</i><a href="">宝宝没眼睛 女子产子后直接崩溃</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!--视频-->
+
+				<!--看书-->
+				<div class="zcfy-ti">
+					<div class="zcfy-t">
+						<ul>
+							<li class="zcfy-t-on" id="toutiao" onclick="btnClick();">看书</li>
+							<li class="" id="bagua" onclick="btnClick();">小说</li>
+							<li class="" id="kantianxia" onclick="btnClick();">图片</li>
+							<li class="" id="shehui" onclick="btnClick();">免费</li>
+						</ul>
+					</div>
+
+					<div class="toutiao onlive">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t015c2f63ce4ed61b06.jpg" alt="">
+										<span class="txtbg">跟牛人炒股 1月净赚1辆车</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t015ba39d7d28ad81c4.jpg" alt="">
+										<span class="txtbg">女子开车给孩子喂奶 被罚200元</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t011512fab44e05f9fc.jpg" alt="">
+										<span class="txtbg">中国大批战机赴西太模拟打实战</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t019cdf5a44ba0b8dde.jpg" alt="">
+										<span class="txtbg">零成本赚钱：揭秘高手炒股术</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">河南桐柏发现特大金矿  可挖80年</a></li>
+								<li><i class="dian">&bull;</i><a href="">落马官员与10多名女子有性关系</a></li>
+								<li><i class="dian">&bull;</i><a href="">深圳官方辟谣：鸽子笼不是住宅</a></li>
+								<li><i class="dian">&bull;</i><a href="">解密儿童用药之困  超级天眼启动</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="bagua">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01229f0e9b8ac7aa0c.jpg" alt="">
+										<span class="txtbg">"睫毛精"刘亦菲仙气足全靠它</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01917846b831410d18.jpg" alt="">
+										<span class="txtbg">50岁苏菲玛索低胸装风韵犹存</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01eb464d916e52e095.jpg" alt="">
+										<span class="txtbg">盘点十大胸大有脑的女明星</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t011441a8feab4cfd99.jpg" alt="">
+										<span class="txtbg">马丽成名画风突变 晒照秀美胸</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">郭德纲旧情人曝光 现任是郭徒弟</a></li>
+								<li><i class="dian">&bull;</i><a href="">侯佩岑被问姐弟情史 险落泪</a></li>
+								<li><i class="dian">&bull;</i><a href="">邓超自拍"告白片"为孙俪庆生</a></li>
+								<li><i class="dian">&bull;</i><a href="">宋茜杨洋避而不见 曝分手原因</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="kantianxia">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t014893a4bb7219c885.jpg" alt="">
+										<span class="txtbg">萨德易位 或抵消中国一战略能力</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01033fdc87448f04f7.jpg" alt="">
+										<span class="txtbg">拉屎娃娃上市 希拉里变"排便者</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01833ed5391ff50cbc.jpg" alt="">
+										<span class="txtbg">5千年前木乃伊开口 第1句竟是</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01c786910100989645.jpg" alt="">
+										<span class="txtbg">网红美女晒健身照 长腿太诱人</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">盘点古人亮瞎眼的避孕黑科技</a></li>
+								<li><i class="dian">&bull;</i><a href="">果粉自提20斤硬币买iPhone 7</a></li>
+								<li><i class="dian">&bull;</i><a href="">第四炸 三星你还能再抵赖吗?</a></li>
+								<li><i class="dian">&bull;</i><a href="">博士生澳洲下33万黄片被起诉</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="shehui">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01f285eb0eeab07bbf.jpg" alt="">
+										<span class="txtbg">为引官员注意 女子路坑中洗澡</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t010fbb4d1aac6df0aa.jpg" alt="">
+										<span class="txtbg">48对新人在火车上办集体婚礼</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01cccd60e3ec3bc54c.png" alt="">
+										<span class="txtbg">集装箱城中村 百人蜗居每天3元</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01d811771d330be20b.jpg" alt="">
+										<span class="txtbg">女子学院新生着古装行拜师礼</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">怀孕50多天女友逼买房 男子自杀</a></li>
+								<li><i class="dian">&bull;</i><a href="">北大专家称四大名著是成人作品</a></li>
+								<li><i class="dian">&bull;</i><a href="">吉林警方回应"为啥3年不还尸体"</a></li>
+								<li><i class="dian">&bull;</i><a href="">宝宝没眼睛 女子产子后直接崩溃</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!--看书-->
+
+
+				<!--新车-->
+				<div class="zcfy-ti">
+					<div class="zcfy-t">
+						<ul>
+							<li class="zcfy-t-on" id="toutiao" onclick="btnClick();">新车</li>
+							<li class="" id="bagua" onclick="btnClick();">资讯</li>
+							<li class="" id="kantianxia" onclick="btnClick();">车险</li>
+							<li class="" id="shehui" onclick="btnClick();">车贷</li>
+						</ul>
+					</div>
+
+					<div class="toutiao onlive">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t015c2f63ce4ed61b06.jpg" alt="">
+										<span class="txtbg">跟牛人炒股 1月净赚1辆车</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t015ba39d7d28ad81c4.jpg" alt="">
+										<span class="txtbg">女子开车给孩子喂奶 被罚200元</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t011512fab44e05f9fc.jpg" alt="">
+										<span class="txtbg">中国大批战机赴西太模拟打实战</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t019cdf5a44ba0b8dde.jpg" alt="">
+										<span class="txtbg">零成本赚钱：揭秘高手炒股术</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">河南桐柏发现特大金矿  可挖80年</a></li>
+								<li><i class="dian">&bull;</i><a href="">落马官员与10多名女子有性关系</a></li>
+								<li><i class="dian">&bull;</i><a href="">深圳官方辟谣：鸽子笼不是住宅</a></li>
+								<li><i class="dian">&bull;</i><a href="">解密儿童用药之困  超级天眼启动</a></li>
+							</ul>
+						</div>
+					</div>
+					
+					<div class="bagua">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01229f0e9b8ac7aa0c.jpg" alt="">
+										<span class="txtbg">"睫毛精"刘亦菲仙气足全靠它</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01917846b831410d18.jpg" alt="">
+										<span class="txtbg">50岁苏菲玛索低胸装风韵犹存</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01eb464d916e52e095.jpg" alt="">
+										<span class="txtbg">盘点十大胸大有脑的女明星</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t011441a8feab4cfd99.jpg" alt="">
+										<span class="txtbg">马丽成名画风突变 晒照秀美胸</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">郭德纲旧情人曝光 现任是郭徒弟</a></li>
+								<li><i class="dian">&bull;</i><a href="">侯佩岑被问姐弟情史 险落泪</a></li>
+								<li><i class="dian">&bull;</i><a href="">邓超自拍"告白片"为孙俪庆生</a></li>
+								<li><i class="dian">&bull;</i><a href="">宋茜杨洋避而不见 曝分手原因</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="kantianxia">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t014893a4bb7219c885.jpg" alt="">
+										<span class="txtbg">萨德易位 或抵消中国一战略能力</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01033fdc87448f04f7.jpg" alt="">
+										<span class="txtbg">拉屎娃娃上市 希拉里变"排便者</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01833ed5391ff50cbc.jpg" alt="">
+										<span class="txtbg">5千年前木乃伊开口 第1句竟是</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01c786910100989645.jpg" alt="">
+										<span class="txtbg">网红美女晒健身照 长腿太诱人</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">盘点古人亮瞎眼的避孕黑科技</a></li>
+								<li><i class="dian">&bull;</i><a href="">果粉自提20斤硬币买iPhone 7</a></li>
+								<li><i class="dian">&bull;</i><a href="">第四炸 三星你还能再抵赖吗?</a></li>
+								<li><i class="dian">&bull;</i><a href="">博士生澳洲下33万黄片被起诉</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="shehui">
+						<div class="zcfy-i">
+							<div class="zcfy-i-img">
+								<div  class="zii_one">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t01f285eb0eeab07bbf.jpg" alt="">
+										<span class="txtbg">为引官员注意 女子路坑中洗澡</span>
+									</a>
+								</div>
+								<div class="zii_two light">
+									<a href="">
+										<img src="https://p2.ssl.qhimg.com/t010fbb4d1aac6df0aa.jpg" alt="">
+										<span class="txtbg">48对新人在火车上办集体婚礼</span>
+									</a>
+								</div>
+								<div class="zii_three">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01cccd60e3ec3bc54c.png" alt="">
+										<span class="txtbg">集装箱城中村 百人蜗居每天3元</span>
+									</a>
+								</div>
+								<div class="zii_four">
+									<a href="">
+										<img src="https://p3.ssl.qhimg.com/t01d811771d330be20b.jpg" alt="">
+										<span class="txtbg">女子学院新生着古装行拜师礼</span>
+									</a>
+								</div>
+							</div>
+							<a class="slides left_Up"></a>
+							<a class="slides right_Next"></a>
+						</div>
+						<!-- <div class="clearfix"></div> -->
+						<div class="zcfy-w">
+							<ul>
+								<li><i class="dian">&bull;</i><a href="">怀孕50多天女友逼买房 男子自杀</a></li>
+								<li><i class="dian">&bull;</i><a href="">北大专家称四大名著是成人作品</a></li>
+								<li><i class="dian">&bull;</i><a href="">吉林警方回应"为啥3年不还尸体"</a></li>
+								<li><i class="dian">&bull;</i><a href="">宝宝没眼睛 女子产子后直接崩溃</a></li>
+							</ul>
+						</div>
+					</div>
+				</div><!--新车-->
+
+				<div class="clearfix"></div>
+				<!--充话费部分-->
+				<div class="fare">
+					<hr class="fare_hr">
+					<div class="fare_ti">
+						<a href="">充话费</a>
+						<a href="">充流量</a>
+						<a href="">机票</a>
+						<a href="">点卡</a>
+					</div>
+					<div class="fare_input">
+						<input type="text" size="12"/>
+						<select name="" id="">
+							<option value="20">20元</option>
+							<option value="50">50元</option>
+							<option value="100">100元</option>
+							<option value="200">200元</option>
+							<option value="500">500元</option>
+						</select>
+						<button>充值</button>
+					</div>
+				</div><!--充话费部分-->
+
+				
+				<div class="clearfix"></div>
+
+				<!--生活服务-->
+				<div class="shenghuofuwu">
+					<div class="s-title">
+						<a href="" class="tjimg tjimg-shenghuofuwu"><h3>生活服务</h3></a>
+						<a href="">郭德纲反驳曹云金有开撕</a>
+					</div>
+					<div class="clearfix"></div>
+					<div class="lists">
+						<ul>
+							<li><a href="">生活</a></li>
+							<li><a href="">房产</a></li>
+							<li><a href="">装修</a></li>
+							<li><a href="">交友</a></li>
+							<li><a href="">招聘</a></li>
+							<li><a href="" class="orange">购物</a></li>
+							<li><a href="">服装</a></li>
+							<li><a href="">鞋包</a></li>
+							<li><a href="">精选</a></li>
+							<li><a href="">特卖</a></li>
+							<li><a href="">汽车</a></li>
+							<li><a href="">车险</a></li>
+							<li><a href="">贷款</a></li>
+							<li><a href="">违章</a></li>
+							<li><a href="">地图</a></li>
+							<li><a href="">理财</a></li>
+							<li><a href="">银行</a></li>
+							<li><a href="">保险</a></li>
+							<li><a href="">财经</a></li>
+							<li><a href="">信用卡</a></li>
+							<li><a href="">女性</a></li>
+							<li><a href="">减肥</a></li>
+							<li><a href="">宠物</a></li>
+							<li><a href="">爱好</a></li>
+							<li><a href="">景点</a></li>
+							<li><a href="">旅游</a></li>
+							<li><a href="">酒店</a></li>
+							<li><a href="">机票</a></li>
+							<li><a href="">火车票</a></li>
+							<li><a href="">线路</a></li>
+						</ul>
+					</div>
+				</div><!--生活服务-->
+				
+				<!--娱乐休闲-->
+				<div class="yulexiuxian">
+					<div class="s-title">
+						<a href="" class="tjimg tjimg-yulexiuxian"><h3>娱乐休闲</h3></a>
+						<a href="">郭德纲反驳曹云金有开撕</a>
+					</div>
+					<div class="clearfix"></div>
+					<div class="lists">
+						<ul>
+							<li><a href="">生活</a></li>
+							<li><a href="">房产</a></li>
+							<li><a href="">装修</a></li>
+							<li><a href="">交友</a></li>
+							<li><a href="">招聘</a></li>
+							<li><a href="" class="orange">购物</a></li>
+							<li><a href="">服装</a></li>
+							<li><a href="">鞋包</a></li>
+							<li><a href="">精选</a></li>
+							<li><a href="">特卖</a></li>
+							<li><a href="">汽车</a></li>
+							<li><a href="">车险</a></li>
+							<li><a href="">贷款</a></li>
+							<li><a href="">违章</a></li>
+							<li><a href="">地图</a></li>
+							<li><a href="">理财</a></li>
+							<li><a href="">银行</a></li>
+							<li><a href="">保险</a></li>
+							<li><a href="">财经</a></li>
+							<li><a href="">信用卡</a></li>
+							<li><a href="">女性</a></li>
+							<li><a href="">减肥</a></li>
+							<li><a href="">宠物</a></li>
+							<li><a href="">爱好</a></li>
+							<li><a href="">景点</a></li>
+							<li><a href="">旅游</a></li>
+							<li><a href="">酒店</a></li>
+							<li><a href="">机票</a></li>
+							<li><a href="">火车票</a></li>
+							<li><a href="">线路</a></li>
+						</ul>
+					</div>
+				</div><!--娱乐休闲-->
+
+				<!--其他类别-->
+				<div class="qitaleibie">
+					<div class="s-title">
+						<a href="" class="tjimg tjimg-qitaleibie"><h3>其他类别</h3></a>
+						<a href="">郭德纲反驳曹云金有开撕</a>
+					</div>
+					<div class="clearfix"></div>
+					<div class="lists">
+						<ul>
+							<li><a href="">生活</a></li>
+							<li><a href="">房产</a></li>
+							<li><a href="">装修</a></li>
+							<li><a href="">交友</a></li>
+							<li><a href="">招聘</a></li>
+							<li><a href="" class="orange">购物</a></li>
+							<li><a href="">服装</a></li>
+							<li><a href="">鞋包</a></li>
+							<li><a href="">精选</a></li>
+							<li><a href="">特卖</a></li>
+							<li><a href="">汽车</a></li>
+							<li><a href="">车险</a></li>
+							<li><a href="">贷款</a></li>
+							<li><a href="">违章</a></li>
+							<li><a href="">地图</a></li>
+							<li><a href="">理财</a></li>
+							<li><a href="">银行</a></li>
+							<li><a href="">保险</a></li>
+							<li><a href="">财经</a></li>
+							<li><a href="">信用卡</a></li>
+							<li><a href="">女性</a></li>
+							<li><a href="">减肥</a></li>
+							<li><a href="">宠物</a></li>
+							<li><a href="">爱好</a></li>
+							<li><a href="">景点</a></li>
+							<li><a href="">旅游</a></li>
+							<li><a href="">酒店</a></li>
+							<li><a href="">机票</a></li>
+							<li><a href="">火车票</a></li>
+							<li><a href="">线路</a></li>
+						</ul>
+					</div>
+				</div><!--其他类别-->
+
+				<div class="clearfix"></div>
+
+				<!--直播区域-->
+				<div class="zhibo">
+					<div class="zhibo-title">
+						<a href="">
+							<img src="https://p1.ssl.qhimg.com/t018c03e8a94afa676d.png" title="正在直播">
+						</a>
+						<div class="zhibo_list">
+							<ul>
+								<li><a href="">热门直播</a></li>
+								<li><a href="">明星来了</a></li>
+								<li><a href="">女神驾到</a></li>
+								<li><a href="">国民男神</a></li>
+								<li><a href="">高清直播</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="zhibo-p">
+						<div class="bigM">
+							<span class="huajiaozhiboTu"></span>
+							<img src="https://huajiao.ssl.qhimg.com/4668f4f17f4ebdb64c5496d749e15259-346_322.jpg" alt="">
+							<span class="shadow"></span>
+							<span class="username">刘艺林Lylmm</span>
+							<span class="fire">791人</span>
+							<div class="play"></div>
+						</div>
+						<div class="MMS">
+							<ul>
+								<li>
+									<img src="https://huajiao.ssl.qhimg.com/6d9128037d97368d9ffee3a9c0e97243-186_155.jpg" alt="">
+									<span class="shadow"></span>
+									<span class="zhiboIng">直播</span>
+									<span class="username">竖琴曼妮</span>
+									<span class="fire">2917人</span>
+									<div class="play"></div>
+								</li>
+								<li>
+									<img src="https://huajiao.ssl.qhimg.com/9f17d32c0076545075aa5e347008c990-186_155.jpg" alt="">
+									<span class="shadow"></span>
+									<span class="zhiboIng">直播</span>
+									<span class="username">维森</span>
+									<span class="fire">531人</span>
+									<div class="play"></div>
+								</li>
+								<li>
+									<img src="https://huajiao.ssl.qhimg.com/10d5d41755edcba1f544b3e1e4499b65-186_155.jpg" alt="">
+									<span class="shadow"></span>
+									<span class="zhiboIng">直播</span>
+									<span class="username">橘子🍊TT7</span>
+									<span class="fire">1858人</span>
+									<div class="play"></div>
+								</li>
+								<li>
+									<img src="https://huajiao.ssl.qhimg.com/2f96b59d063e93c5383056bdd40ae7ae-186_155.jpg" alt="">
+									<span class="shado"></span>
+									<span class="zhiboIng">直播</span>
+									<span class="username">Grace 娜娜</span>
+									<span class="fire">36935人</span>
+									<div class="play"></div>
+								</li>
+								<li>
+									<img src="https://huajiao.ssl.qhimg.com/85dcce731663ac05f245a6eaf08172de-186_155.jpg" alt="">
+									<span class="shadow"></span>
+									<span class="zhiboIng">直播</span>
+									<span class="username">魔苡·琵琶🌸</span>
+									<span class="fire">460人</span>
+									<div class="play"></div>
+								</li>
+								<li>
+									<img src="https://huajiao.ssl.qhimg.com/4d291cb94ea38c4e28e487672e0c97b3-186_155.jpg" alt="">
+									<span class="shadow"></span>
+									<span class="zhiboIng">直播</span>
+									<span class="username">👸🏻✨PT-一字马女王💫</span>
+									<span class="fire">7220人</span>
+									<div class="play"></div>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div><!--直播区域-->
+
+				<!--看视频区域-->
+				<div class="kanshipin leg">
+					<!--看视频区title-->
+					<div class="leg-title">
+						<a href="" class="leg-t-img">
+							<img src="https://p1.ssl.qhimg.com/t01667bf6e151cf940d.jpg" title="看视频">
+						</a>
+						<div class="leg-t-list">
+							<ul>
+								<li><a href="">游戏直播</a></li>
+								<li><a href="">熊猫TV</a></li>
+								<li><a href="">水滴直播</a></li>
+								<li><a href="">综艺</a></li>
+								<li><a href="">电影</a></li>
+								<li><a href="">热播大剧</a></li>
+								<li><a href="">劲爆八卦</a></li>
+								<li><a href="">手机看大片</a></li>
+							</ul>
+						</div>
+					</div><!--看视频区title-->
+
+					<!--看视频区域body-->
+					<div class="leg-content">
+						<!--看视频区域1-->
+						<div class="leg-sp-hot sliders" data-toggle="slider">
+							<div class="leg-sp-hot-imgs">
+								<ul>
+									<li class="leg-shi-on"><img src="https://p0.ssl.qhimg.com/t01ee9f4aaf317a011c.jpg" alt=""></li>
+									<li><img src="https://p3.ssl.qhimg.com/t01d746637b462a7a28.jpg" alt=""></li>
+									<li><img src="https://p1.ssl.qhimg.com/t01a29cad78cb3d68d0.jpg" alt=""></li>
+								</ul>
+							</div>
+							<span class="leg-hot"></span>
+							<span class="shadow-40"></span>
+							<span class="smallPlay"></span>
+							<div class="newWords">
+								<p>中国新歌声</p>
+								<p>那英战队PK哈林战队 导师点将斗智斗勇</p>
+							</div>
+							
+							<div class="slider">
+								<div class="slider-left"></div>
+								<div class="slider-right"></div>
+							</div>
+						</div><!--看视频区域1-->
+						
+						<!--看视频区域2-->
+						<div class="leg-sp-22">
+							<ul>
+								<li>
+									<img src="https://p2.ssl.qhimg.com/dmb/165_100_/t01add6ae5b729bd185.jpg" alt="">
+									<span class="shadow-40"></span>
+									<span class="smallPlay"></span>
+									<div class="newWords">
+										<p>小三酒店被捉现场</p>
+										<p>仅剩丝袜场面混乱</p>
+									</div>
+									<span class="hover-black"></span>
+								</li>
+								<li>
+									<img src="https://p3.ssl.qhimg.com/dmb/165_100_/t015803cd13dbb04e22.jpg" alt="">
+									<span class="shadow-40"></span>
+									<span class="smallPlay"></span>
+									<div class="newWords">
+										<p>两女子夜晚坐地开撕</p>
+										<p>安全裤都被撕了</p>
+									</div>
+									<span class="hover-black"></span>
+								</li>
+								<li>
+									<img src="https://p5.ssl.qhimg.com/t019bd4f484a40cfe90.jpg" alt="">
+									<span class="shadow-40"></span>
+									<span class="smallPlay"></span>
+									<div class="newWords">
+										<p>厉害了林志玲！</p>
+										<p>中门大开露酥胸</p>
+									</div>
+									<span class="hover-black"></span>
+								</li>
+								<li>
+									<img src="https://p2.ssl.qhimg.com/t018a9555ac33519328.jpg" alt="">
+									<span class="shadow-40"></span>
+									<span class="smallPlay"></span>
+									<div class="newWords">
+										<p>范爷国际影展封后</p>
+										<p>甜蜜撒娇致谢李晨</p>
+									</div>
+									<span class="hover-black"></span>
+								</li>
+							</ul>
+						</div><!--看视频区域2-->
+
+						<!--看视频区域3-->
+						<div class="video-slide">
+
+							<div class="v-s-title">
+								<ul>
+									<li class="v-s-title-hover">电视剧排行</li>
+									<li>电影</li>
+									<li>综艺</li>
+								</ul>
+							</div>
+
+							<div class="dianshiju">
+								<ul>
+									<li><a href="">1.微微一笑很倾城</a></li>
+									<li><a href="">2.老九门</a></li>
+									<li><a href="">3.小别离</a></li>
+									<li><a href="">4.麻辣变形计</a></li>
+									<li><a href="">5.诛仙青云志</a></li>
+									<li><a href="">6.游击英雄</a></li>
+								</ul>
+								<ul>
+									<li><a href="">7.幻城</a></li>
+									<li><a href="">8.旋风少女2</a></li>
+									<li><a href="">9.结婚为什么</a></li>
+									<li><a href="">10.医馆笑传2</a></li>
+									<li><a href="">11.半妖倾城</a></li>
+									<li><a href="">12.长歌行</a></li>
+								</ul>
+							</div>
+
+							<div class="dianying">
+								<ul>
+									<li><a href="">1.盗墓笔记</a></li>
+									<li><a href="">2.寒战2</a></li>
+									<li><a href="">3.封神传奇</a></li>
+									<li><a href="">4.微微一笑</a></li>
+									<li><a href="">5.危城</a></li>
+									<li><a href="">6.猎灵师</a></li>
+								</ul>
+								<ul>
+									<li><a href="">7.大明锦衣卫</a></li>
+									<li><a href="">8.神站</a></li>
+									<li><a href="">9.超级保镖</a></li>
+									<li><a href="">10.美国队长3</a></li>
+									<li><a href="">11.我异能</a></li>
+									<li><a href="">12.刑警兄弟</a></li>
+								</ul>
+							</div>
+
+							<div class="zongyi v-s-lists">
+								<ul>
+									<li><a href="">1.中国新歌声</a></li>
+									<li><a href="">2.我们来了</a></li>
+									<li><a href="">3.跨界喜剧王</a></li>
+									<li><a href="">4.快乐大本营</a></li>
+									<li><a href="">5.我去上学啦</a></li>
+									<li><a href="">6.非诚勿扰</a></li>
+								</ul>
+								<ul>
+									<li><a href="">7.笑傲江湖</a></li>
+									<li><a href="">8.我们战斗吧</a></li>
+									<li><a href="">9.Running Man</a></li>
+									<li><a href="">10.金星脱口秀</a></li>
+									<li><a href="">11.我的新衣</a></li>
+									<li><a href="">12.咋们穿越吧</a></li>
+								</ul>
+							</div>				
+						</div><!--看视频区域3-->
+
+						<!--看视频区域4-->
+						<div class="leg-rmjx">
+							<div class="leg-rmjx-left">
+								<p>热门精选</p>
+								<div class="rmjxs sliders" data-toggle="slider">
+									<div class="rmjxs-1">
+										<img src="https://p1.ssl.qhimg.com/t0168cae8a79bb527b3.jpg">
+										<span class="rmjx-words">旋风少女 第二季</span>
+										<span class="hover-black"></span>
+									</div>
+									<div class="rmjxs-2">
+										<img src="https://p0.ssl.qhimg.com/t01a78ef634aaf4a008.jpg">
+										<span class="rmjx-words">青云志</span>
+										<span class="hover-black"></span>
+									</div>
+									<div class="rmjxs-3">
+										<img src="https://p0.ssl.qhimg.com/t01a86e78cb4070dd09.jpg">
+										<span class="rmjx-words">微微一笑很倾城</span>
+										<span class="hover-black"></span>
+									</div>
+									<div class="rmjxs-4">
+										<img src="https://p0.ssl.qhimg.com/t0135717fd87cb1eafa.jpg">
+										<span class="rmjx-words">终极硬汉</span>
+										<span class="hover-black"></span>
+									</div>
+									
+									<div class="slider">
+										<div class="slider-left"></div>
+										<div class="slider-right"></div>
+									</div>
+								
+								</div>
+							</div>
+							<div class="leg-rmjx-right">
+								<div class="lrr-title">
+									<p>直播专区</p>
+									<div class="qiehuan">
+										<a href=""><span>&lt;</span></a>
+										<a href=""><span>&gt;</span></a>
+									</div>
+								</div>
+								<div class="lrr-imgs">
+									<img src="https://p0.ssl.qhimg.com/t011bc37d80cc23f1c7.jpg" alt="">
+									<img src="https://p3.ssl.qhimg.com/t012168b691ce906422.png" alt="">
+									<span class="shadow-40"></span>
+									<p><a href="">香奈儿发布会现场</a></p>
+								</div>
+							</div>
+						</div><!--看视频区域4-->
+					</div><!--看视频区域body-->
+				</div><!--看视频区域-->
+				
+				<!--购物区域-->
+				<div class="gouwu">
+					<div class="leg-title">
+						<a href="" class="leg-t-img">
+							<img src="https://p1.ssl.qhimg.com/t0164a3d0c9ae584541.jpg" title="看视频">
+						</a>
+						<div class="leg-t-list">
+							<ul>
+								<li><a href="">海外购物</a></li>
+								<li><a href="">鞋包户外</a></li>
+								<li><a href="">一折特卖</a></li>
+								<li><a href="">服装服饰</a></li>
+								<li><a href="">360商城</a></li>
+								<li><a href="">360手机</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="gouwu-left">
+						<div class="gl-top">
+							<a href="">
+								<img src="https://p3.ssl.qhimg.com/t01818a1a4079630645.jpg" alt="">
+								<span class="hover-black"></span>
+							</a>
+						</div>
+						<div class="gl-bottom sliders" data-toggle="slider">
+							<ul>
+								<li>
+									<a href="">
+										<span class="glb-title">新品手机上市</span>
+	                                    <span class="glb-subtitle">精品特卖</span>
+	                                    <span class="price"><em>¥</em><i>1799</i></span>
+	                                    <img src="https://s3m.mediav.com/fpassicc/20160928/238450-8166127293152605307_160x160_20160928115141_068196.jpg">
+	                                    <span class="hover-black"></span>
+									</a>
+								</li>
+								<li>
+									<a href="">
+										<span class="glb-title">新品手机上市</span>
+	                                    <span class="glb-subtitle">精品特卖</span>
+	                                    <span class="price"><em>¥</em><i>1799</i></span>
+	                                    <img src="https://s3m.mediav.com/fpassicc/20160928/238450-8166127293152605307_160x160_20160928115141_068196.jpg">
+	                                    <span class="hover-black"></span>
+									</a>
+								</li>
+							</ul>
+							<div class="slider">
+								<div class="slider-left"></div>
+								<div class="slider-right"></div>
+							</div>
+						</div>
+					</div>
+					<div class="gouwu-center">
+						<ul>
+							<li><a href="">
+								<img src="https://p0.ssl.qhimg.com/t01c37b6143e324fdb7.jpg" alt="">
+								<span class="rmjx-words">名师路女装1.4折起</span>
+								<span class="hover-black"></span>
+							</a></li>
+							<li><a href="">
+								<img src="https://p0.ssl.qhimg.com/t01f216c40ec2b74bae.jpg" alt="">
+								<span class="rmjx-words">哥弟4.6折起</span>
+								<span class="hover-black"></span>
+							</a></li>
+							<li><a href="">
+								<img src="https://p4.ssl.qhimg.com/t0113d31f95444fda21.jpg" alt="">
+								<span class="rmjx-words">赛兔羊毛 1.4折起</span>
+								<span class="hover-black"></span>
+							</a></li>
+							<li><a href="">
+								<img src="https://p5.ssl.qhimg.com/t01e40afcda5cabcd9f.jpg" alt="">
+								<span class="rmjx-words">FINITY1折起</span>
+								<span class="hover-black"></span>
+							</a></li>
+							<li><a href="">
+								<img src="https://p1.ssl.qhimg.com/t011d634fb8e35656e2.jpg" alt="">
+								<span class="rmjx-words">BEANPOLE 3折起</span>
+								<span class="hover-black"></span>
+							</a></li>
+							<li><a href="">
+								<img src="https://p3.ssl.qhimg.com/t011d8c740d1171ab72.jpg" alt="">
+								<span class="rmjx-words">Aimii女装2.2折起</span>
+								<span class="hover-black"></span>
+							</a></li>
+						</ul>
+					</div>
+					<div class="gouwu-right">
+						<div class="lrr-title right-25">
+							<p>智能设备</p>
+							<div class="qiehuan">
+								<a href=""><span>&lt;</span></a>
+								<a href=""><span>&gt;</span></a>
+							</div>
+						</div>
+						<div class="gr-img">
+							<div class="gri1">
+								<a href="">
+									<img src="https://p3.ssl.qhimg.com/t0157a732b92862e5e8.jpg" alt="">
+									<span class="hover-black"></span>
+								</a>
+							</div>
+							<div class="gri2">
+								<a href="">
+									<img src="https://p2.ssl.qhimg.com/t01e683be70483388ce.jpg" alt="">
+									<span class="hover-black"></span>
+								</a>
+							</div>
+							<div class="gri3">
+								<a href="">
+									<img src="https://p3.ssl.qhimg.com/t01f82ed1e895745a9f.jpg" alt="">
+									<span class="hover-black"></span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div><!--购物区域-->
+				
+				<!--玩游戏区域-->
+				<div class="wanyouxi">
+					<div class="leg-title">
+						<a href="" class="leg-t-img">
+							<img src="https://p1.ssl.qhimg.com/t0164a3d0c9ae584541.jpg" title="玩游戏">
+						</a>
+						<div class="leg-t-list">
+							<ul>
+								<li><a href="">页游</a></li>
+								<li><a href="">网游</a></li>
+								<li><a href="">单机</a></li>
+								<li><a href="">视频</a></li>
+								<li><a href="">小游戏</a></li>
+								<li><a href="">手游</a></li>
+								<li><a href="">连连看</a></li>
+								<li><a href="">盗墓笔记</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="wanyouxi-body">
+						<div class="wb1 sliders" data-toggle="slider">
+							<div class="relatives">
+								<span class="wyx-shadow"></span>
+								<img src="https://p1.ssl.qhimg.com/t01b940faabf01eb5e1.jpg" alt="">
+								<span class="bottom-words">永久免费游戏</span>
+							</div>
+							<div class="relatives">
+								<span class="wyx-shadow"></span>
+								<img src="https://p3.ssl.qhimg.com/t01b7527dd7180e2c63.jpg" alt="">
+								<span class="bottom-words">吴京召集兄弟进驻千服</span>
+							</div>
+							<div class="relatives">
+								<span class="wyx-shadow"></span>
+								<img src="https://p0.ssl.qhimg.com/t01e82ad266927e8d22.jpg" alt="">
+								<span class="bottom-words">最近热玩游戏</span>
+							</div>
+							<div class="relatives">
+								<span class="wyx-shadow"></span>
+								<img src="https://p2.ssl.qhimg.com/t01c5ba5f4c255983e1.jpg" alt="">
+								<span class="bottom-words">假期游戏首选</span>
+							</div>
+							<div class="slider">
+								<div class="slider-left"></div>
+								<div class="slider-right"></div>
+							</div>
+						</div>
+
+						<div class="wb2">
+							<div class="lrr-title">
+								<p>热门推荐</p>
+								<div class="qiehuan">
+									<a href=""><span>&lt;</span></a>
+									<a href=""><span>&gt;</span></a>
+								</div>
+							</div>
+							<div class="wb2img">
+								<img src="https://p0.ssl.qhimg.com/t01b1cfbbb452bf5d5f.jpg" alt="">
+							</div>
+							<div class="wb2right">
+								<p>张起灵带你揭秘青铜门背后的秘密</p>
+								<div class="minstars">
+									<span class="minstar"></span>
+									<span class="minstar"></span>
+									<span class="minstar"></span>
+									<span class="minstar"></span>
+									<span class="minstar"></span>
+								</div>
+								<button class="btn-wb2">去看看</button>
+							</div>
+						</div>
+
+						<div class="wb3">
+							<div class="wb3a">
+								<ul>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p1.ssl.qhimg.com/t01797536ae37b0e912.jpg" alt="">
+												<span class="wb3-words">熊出没</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p2.ssl.qhimg.com/t01bb9c6d8020fcbd85.jpg" alt="">
+												<span class="wb3-words">每日必玩</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p2.ssl.qhimg.com/t01cb9f0b51613b3667.gif" alt="">
+												<span class="wb3-words">每日必玩</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p4.ssl.qhimg.com/t019fa477c8bc1ddcad.png" alt="">
+												<span class="wb3-words">蓝月传奇</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p2.ssl.qhimg.com/t013daf38a639994e58.jpg" alt="">
+												<span class="wb3-words">连连看</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p1.ssl.qhimg.com/t0142020944f3d5a583.jpg" alt="">
+												<span class="wb3-words">我的世界跑酷</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p2.ssl.qhimg.com/t01dc11aa99cf8af1ae.jpg" alt="">
+												<span class="wb3-words">彩虹糖甜点</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p1.ssl.qhimg.com/t01f10e92b43a9eef18.png" alt="">
+												<span class="wb3-words">我的世界</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p1.ssl.qhimg.com/t0176d774f690f5cdfe.jpg" alt="">
+												<span class="wb3-words">小鸟打弹弓</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p0.ssl.qhimg.com/t01302adf32d36bc0bd.jpg" alt="">
+												<span class="wb3-words">指甲美容</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p1.ssl.qhimg.com/t01797536ae37b0e912.jpg" alt="">
+												<span class="wb3-words">熊出没</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p2.ssl.qhimg.com/t01bb9c6d8020fcbd85.jpg" alt="">
+												<span class="wb3-words">每日必玩</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p2.ssl.qhimg.com/t01cb9f0b51613b3667.gif" alt="">
+												<span class="wb3-words">每日必玩</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p4.ssl.qhimg.com/t019fa477c8bc1ddcad.png" alt="">
+												<span class="wb3-words">蓝月传奇</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p2.ssl.qhimg.com/t013daf38a639994e58.jpg" alt="">
+												<span class="wb3-words">连连看</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p1.ssl.qhimg.com/t0142020944f3d5a583.jpg" alt="">
+												<span class="wb3-words">我的世界跑酷</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p2.ssl.qhimg.com/t01dc11aa99cf8af1ae.jpg" alt="">
+												<span class="wb3-words">彩虹糖甜点</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p1.ssl.qhimg.com/t01f10e92b43a9eef18.png" alt="">
+												<span class="wb3-words">我的世界</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p1.ssl.qhimg.com/t0176d774f690f5cdfe.jpg" alt="">
+												<span class="wb3-words">小鸟打弹弓</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p0.ssl.qhimg.com/t01302adf32d36bc0bd.jpg" alt="">
+												<span class="wb3-words">指甲美容</span>
+											</a>
+										</div>
+									</li><li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p1.ssl.qhimg.com/t01797536ae37b0e912.jpg" alt="">
+												<span class="wb3-words">熊出没</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p2.ssl.qhimg.com/t01bb9c6d8020fcbd85.jpg" alt="">
+												<span class="wb3-words">每日必玩</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p2.ssl.qhimg.com/t01cb9f0b51613b3667.gif" alt="">
+												<span class="wb3-words">每日必玩</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p4.ssl.qhimg.com/t019fa477c8bc1ddcad.png" alt="">
+												<span class="wb3-words">蓝月传奇</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p2.ssl.qhimg.com/t013daf38a639994e58.jpg" alt="">
+												<span class="wb3-words">连连看</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p1.ssl.qhimg.com/t0142020944f3d5a583.jpg" alt="">
+												<span class="wb3-words">我的世界跑酷</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p2.ssl.qhimg.com/t01dc11aa99cf8af1ae.jpg" alt="">
+												<span class="wb3-words">彩虹糖甜点</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p1.ssl.qhimg.com/t01f10e92b43a9eef18.png" alt="">
+												<span class="wb3-words">我的世界</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p1.ssl.qhimg.com/t0176d774f690f5cdfe.jpg" alt="">
+												<span class="wb3-words">小鸟打弹弓</span>
+											</a>
+										</div>
+									</li>
+									<li>
+										<div class="wb3pics">
+											<a href="">
+												<img src="https://p0.ssl.qhimg.com/t01302adf32d36bc0bd.jpg" alt="">
+												<span class="wb3-words">指甲美容</span>
+											</a>
+										</div>
+									</li>
+								</ul>
+							</div>
+							<div class="wb3b"></div>
+						</div>
+
+						<div class="wb4">
+							<div class="title-rmtj">
+								<p><a href="">热门推荐</a></p>
+								<div class="title-rmtj-r">
+									<a href="" class="" title="yy">页游</a>
+									<a href="" class="" title="sy">手游</a>
+								</div>
+							</div>
+							<div class="wb4-rmtj-yy">
+								<ul>
+									<li><a href="" class="Mimg Mimg-dmbj">盗墓笔记</a></li>
+									<li><a href="" class="Mimg Mimg-mfwz">魔法王座</a></li>
+									<li><a href="" class="Mimg Mimg-jzwl">决战武林</a></li>
+									<li><a href="" class="Mimg Mimg-qyz">青云志</a></li>
+									<li><a href="" class="Mimg Mimg-cycs2">赤月传说2</a></li>
+									<li><a href="" class="Mimg Mimg-rxzg">热血战歌</a></li>
+									<li><a href="" class="Mimg Mimg-rxsg3">热血三国3</a></li>
+									<li><a href="" class="Mimg Mimg-wszzl">武神赵子龙</a></li>
+									<li><a href="" class="Mimg Mimg-fwdtx">范伟打天下</a></li>
+									<li><a href="" class="Mimg Mimg-fddzz">菲动大主宰</a></li>
+									<li><a href="" class="Mimg Mimg-lzlz">龙之领主</a></li>
+									<li><a href="" class="Mimg Mimg-jyjh">剑雨江湖</a></li>
+								</ul>
+							</div>
+							<div class="wb4-rmtj-sy">
+								<ul>
+									<li><a href="" class="Mimg Mimg-jyjh">剑雨江湖</a></li>
+									<li><a href="" class="Mimg Mimg-jyjh">剑雨江湖</a></li>
+									<li><a href="" class="Mimg Mimg-jyjh">剑雨江湖</a></li>
+									<li><a href="" class="Mimg Mimg-jyjh">剑雨江湖</a></li>
+									<li><a href="" class="Mimg Mimg-jyjh">剑雨江湖</a></li>
+									<li><a href="" class="Mimg Mimg-rxzg">热血战歌</a></li>
+									<li><a href="" class="Mimg Mimg-jyjh">剑雨江湖</a></li>
+									<li><a href="" class="Mimg Mimg-jyjh">剑雨江湖</a></li>
+									<li><a href="" class="Mimg Mimg-jyjh">剑雨江湖</a></li>
+									<li><a href="" class="Mimg Mimg-jyjh">剑雨江湖</a></li>
+									<li><a href="" class="Mimg Mimg-jyjh">剑雨江湖</a></li>
+									<li><a href="" class="Mimg Mimg-jyjh">剑雨江湖</a></li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div><!--玩游戏区域-->
+
+				<!--娱乐头条-->
+				<div class="yuletoutiao">
+					<div class="leg-title">
+						<a href="" class="leg-t-img">
+							<img src="https://p0.ssl.qhimg.com/t0120a91d8150621874.jpg" title="娱乐头条">
+						</a>
+						<div class="leg-t-list">
+							<ul>
+								<li><a href="">笑话精选</a></li>
+								<li><a href="">美女图片</a></li>
+								<li><a href="">搞笑视频</a></li>
+								<li><a href="">娱乐八卦</a></li>
+								<li><a href="">主播</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="yltt1 sliders" data-toggle="slider">
+						<div class="yltt1-img ">
+							<a href="">
+								<img src="https://p4.ssl.qhimg.com/t015ac3a92944901bc7.jpg" alt="">
+								<span class="yltt1-icon"></span>
+								<span class="yltt1-words">赵雅芝素雅大方 与老公恩爱同行</span>
+							</a>
+						</div>
+						<div class="slider">
+							<div class="slider-left"></div>
+							<div class="slider-right"></div>
+						</div>
+					</div>
+					<div class="yltt2">
+						<ul>
+							<li><i class="dian">•</i><a href="">张馨予否认捆绑范冰冰炒作:我活得有尊严</a></li>
+							<li><i class="dian">•</i><a href="">胖了？杨钰莹薄纱透视秀性感 圆脸挤出双下巴</a></li>
+							<li><i class="dian">•</i><a href="">马伊琍黑衣现身频打电话 墨镜遮面似“女老板”</a></li>
+							<li><i class="dian">•</i><a href="">baby有喜?黄晓明5个哈回应 热吻戏不报备</a></li>
+						</ul>
+						<ul>
+							<li><i class="dian">•</i><a href="" class="orange">张馨予否认捆绑范冰冰炒作:我活得有尊严</a></li>
+							<li><i class="dian">•</i><a href="">胖了？杨钰莹薄纱透视秀性感 圆脸挤出双下巴</a></li>
+							<li><i class="dian">•</i><a href="">马伊琍黑衣现身频打电话 墨镜遮面似“女老板”</a></li>
+							<li><i class="dian">•</i><a href="">baby有喜?黄晓明5个哈回应 热吻戏不报备</a></li>
+						</ul>
+					</div>
+					<div class="yltt3">
+						<a href="">
+							<div class="yltt3-img">
+								<img src="https://p2.ssl.qhimg.com/t0174c89b748d88d45d.jpg" alt="">
+								<span class="hover-black"></span>
+							</div>
+							<span>baby小腹凸起</span>
+						</a>
+						<a href="">
+							<div class="yltt3-img">
+								<img src="https://p2.ssl.qhimg.com/t0174c89b748d88d45d.jpg" alt="">
+								<span class="hover-black"></span>
+							</div>
+							<span>baby小腹凸起</span>
+						</a>
+						<a href="">
+							<div class="yltt3-img">
+								<img src="https://p2.ssl.qhimg.com/t0174c89b748d88d45d.jpg" alt="">
+								<span class="hover-black"></span>
+							</div>
+							<span>baby小腹凸起</span>
+						</a>
+						<a href="">
+							<div class="yltt3-img">
+								<img src="https://p2.ssl.qhimg.com/t0174c89b748d88d45d.jpg" alt="">
+								<span class="hover-black"></span>
+							</div>
+							<span>baby小腹凸起</span>
+						</a>
+					</div>
+					<div class="yltt4">
+						<p>爆笑囧图</p>
+						<div class="yltt4i sliders" data-toggle="slider">
+							<div class="yltt4i-1">
+								<img src="https://p2.ssl.qhimg.com/t010efa376b38e095eb.jpg">
+								<span class="rmjx-words">家里的地位一目了然</span>
+								<span class="hover-black"></span>
+							</div>
+							<div class="yltt4i-2">
+								<img src="https://p4.ssl.qhimg.com/t019ef376866f8d3ed0.jpg">
+								<span class="rmjx-words">覆狗难收</span>
+								<span class="hover-black"></span>
+							</div>
+							<div class="yltt4i-3">
+								<img src="https://p0.ssl.qhimg.com/t019f5934fdadc4616b.jpg">
+								<span class="rmjx-words">仔细看好像什么不对</span>
+								<span class="hover-black"></span>
+							</div>
+							<div class="yltt4i-4">
+								<img src="https://p0.ssl.qhimg.com/t0105d7668fd956bf58.jpg">
+								<span class="rmjx-words">喵族战士</span>
+								<span class="hover-black"></span>
+							</div>
+							<div class="slider">
+								<div class="slider-left"></div>
+								<div class="slider-right"></div>
+							</div>
+						</div>
+						
+					</div>
+					<div class="yltt5">
+						<div class="lrr-title">
+							<p>追星专区</p>
+							<div class="qiehuan">
+								<a href=""><span>&lt;</span></a>
+								<a href=""><span>&gt;</span></a>
+							</div>
+						</div>
+						<div class="lrr-imgs">
+							<img src="https://p0.ssl.qhimg.com/t019b6a4b4ffe4a9fd1.jpg" alt="">
+							<span class="shadow-40"></span>
+							<p><a href="">国庆档《湄公河行动》逆袭夺冠</a></p>
+						</div>
+					</div>
+				</div>
+
+				<!--生活百科-->
+				<div class="shbk">
+					<div class="leg-title">
+						<a href="" class="leg-t-img">
+							<img src="https://p1.ssl.qhimg.com/t010aaed725d7437de7.jpg" title="生活百科">
+						</a>
+						<div class="leg-t-list">
+							<ul>
+								<li><a href="">发现VR</a></li>
+								<li><a href="">查企业</a></li>
+								<li><a href="">娱乐八卦</a></li>
+								<li><a href="">手机充值</a></li>
+								<li><a href="">房产家居</a></li>
+								<li><a href="">健康生活</a></li>
+								<li><a href="">热搜百科</a></li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="shbk-body">
+						<div class="sb1">
+							<div class="sb-img">
+								<a href="">
+									<img src="https://p5.ssl.qhimg.com/t013ba4e898a0544498.jpg" alt="">
+									<span class="sbtxt">揭秘美容院发生的真实惨案</span>
+									<span class="hover-black"></span>
+								</a>
+							</div>
+							<ul>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+							</ul>
+						</div>
+						<div class="sb2">
+							<div class="sb-img">
+								<a href="">
+									<img src="https://p5.ssl.qhimg.com/t013ba4e898a0544498.jpg" alt="">
+									<span class="sbtxt">揭秘美容院发生的真实惨案</span>
+									<span class="hover-black"></span>
+								</a>
+							</div>
+							<ul>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+							</ul>
+						</div>
+						<div class="sb3">
+							<div class="sb-img">
+								<a href="">
+									<img src="https://p5.ssl.qhimg.com/t013ba4e898a0544498.jpg" alt="">
+									<span class="sbtxt">揭秘美容院发生的真实惨案</span>
+									<span class="hover-black"></span>
+								</a>
+							</div>
+							<ul>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+							</ul>
+						</div>
+						<div class="sb4">
+							<div class="sb-img">
+								<a href="">
+									<img src="https://p5.ssl.qhimg.com/t013ba4e898a0544498.jpg" alt="">
+									<span class="sbtxt">揭秘美容院发生的真实惨案</span>
+									<span class="hover-black"></span>
+								</a>
+							</div>
+							<ul>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+								<li><i class="dian">·</i><a href="http://www.7706.com/read/20160426/39795.html?nbp360&20160922">揭那些年明星落魄的草根岁月</a></li>
+							</ul>
+						</div>
+						
+						<div id="turn">
+							<div class="sh-left"></div>
+							<div class="sh-right"></div>
+						</div>
+						
+
+					</div>
+
+				</div>
+			</div><!--中部链接展示区-->
+
+			<script type="text/javascript" src="js/marinWeb.js"></script>
+		</div><!--居中定位-->
+
+		<div class="footer">
+			<div class="footer-top">
+				<a href="http://corp.360.cn/">Investor Relations</a>
+				<a href="">关于我们</a>
+				<a href="">安全保障</a>
+				<a href="">360招聘</a>
+				<a href="">联盟品牌认证</a>
+				<a href="">猎网平台</a>
+				<span>Copyright ©360.cn. All Rights Reserved.</span>
+			</div>
+			<div class="footer-bottom">
+				<a href="">京ICP证080047号</a>
+				<a href="">京公网安备11000002000006号</a>
+				<a href="" id="netcenter">中国互联网举报中心</a>
+				<span>电话：010-58541935</span>
+				<span>举报邮箱：360report@360.cn</span>
+			</div>
+		</div>
+	</body>
+</html>

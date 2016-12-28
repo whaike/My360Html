@@ -1,0 +1,94 @@
+*{
+	margin:0;
+	padding:0;
+	font:arial;
+}
+body{
+		color:#666;
+
+	    font: 12px/1.5 arial,\5b8b\4f53,georgia,verdana,helvetica,sans-serif;
+	    /*background-color:rgba(243, 243, 243, 0.28);*/
+	    background-color:#F3F3F3;
+}
+img{
+	border:none;
+}
+li{
+	list-style:none;
+}
+
+a{
+	/*color:#666;*/
+	color:#333;
+	text-decoration:none;
+	
+}
+a:hover{
+	cursor:pointer;
+	text-decoration:underline;
+	/*color:red;*/
+}
+.floatleft{
+	float:left;
+}
+.floatright{
+	float:right;
+}
+.clearfix{
+	clear:both;
+}
+.wrapMain{
+	width:1000px;
+	margin:0 auto;
+}
+.bull{
+	margin:0px 5px;
+}
+
+@keyframes gredientShow
+{
+from {opacity:0.3;}
+to {opacity:1;}
+}
+
+@-moz-keyframes gredientShow/* Firefox */
+{
+from {opacity:0.3;}
+to {opacity:1;}
+}
+
+@-webkit-keyframes gredientShow /* Safari 和 Chrome */
+{
+from {opacity:0.3;}
+to {opacity:1;}
+}
+
+@-o-keyframes gredientShow /* Opera */
+{
+from {opacity:0.3;}
+to {opacity:1;}
+}
+/*隐藏动画*/
+@keyframes gredienthidden
+{
+from {opacity:1;}
+to {opacity:0;}
+}
+
+@-moz-keyframes gredienthidden/* Firefox */
+{
+from {opacity:1;}
+to {opacity:0;}
+}
+
+@-webkit-keyframes gredienthidden /* Safari 和 Chrome */
+{
+from {opacity:1;}
+to {opacity:0;}
+}
+
+@-o-keyframes gredienthidden /* Opera */
+{
+from {opacity:1;}
+to {opacity:0;}
+}
